@@ -1,0 +1,9 @@
+{
+    "target_overrides": {
+        "*": {
+            "platform.stdio-baud-rate": 115200,
+            "platform.stdio-buffered-serial": 1, 
+            "target.clock_source": "USE_PLL_HSE_XTAL"
+        }
+    }
+}
