@@ -1,0 +1,889 @@
+Component: ARM Compiler 6.16 Tool: armlink [5dfeaa00]
+
+==============================================================================
+
+Memory Map of the image
+
+  Image Entry point : 0x080001c5
+
+  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x00009f54, Max: 0x00080000, ABSOLUTE)
+
+    Execution Region ER_IROM1 (Base: 0x08000000, Size: 0x00009e4c, Max: 0x00080000, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x08000000   0x000001c4   Data   RO        33231    RESET               BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F446xE/TOOLCHAIN_ARM/startup_stm32f446xx.o
+    0x080001c4   0x00000008   Code   RO        34153  * !!!main             c:\Users\Jamie\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(__main.o)
+    0x080001cc   0x00000034   Code   RO        35076    !!!scatter          c:\Users\Jamie\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(__scatter.o)
+    0x08000200   0x0000001a   Code   RO        35078    !!handler_copy      c:\Users\Jamie\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(__scatter_copy.o)
+    0x0800021a   0x00000002   PAD
+    0x0800021c   0x0000001c   Code   RO        35080    !!handler_zi        c:\Users\Jamie\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(__scatter_zi.o)
+    0x08000238   0x00000002   Code   RO        34152    .ARM.Collect$$libinit$$00000000  c:\Users\Jamie\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libinit.o)
+    0x0800023a   0x00000004   Code   RO        34399    .ARM.Collect$$libinit$$00000001  c:\Users\Jamie\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libinit2.o)
+    0x0800023e   0x00000000   Code   RO        34402    .ARM.Collect$$libinit$$00000004  c:\Users\Jamie\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libinit2.o)
+    0x0800023e   0x00000008   Code   RO        34403    .ARM.Collect$$libinit$$00000005  c:\Users\Jamie\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libinit2.o)
+    0x08000246   0x00000000   Code   RO        34405    .ARM.Collect$$libinit$$0000000A  c:\Users\Jamie\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libinit2.o)
+    0x08000246   0x00000000   Code   RO        34407    .ARM.Collect$$libinit$$0000000C  c:\Users\Jamie\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libinit2.o)
+    0x08000246   0x00000000   Code   RO        34409    .ARM.Collect$$libinit$$0000000E  c:\Users\Jamie\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libinit2.o)
+    0x08000246   0x00000000   Code   RO        34412    .ARM.Collect$$libinit$$00000011  c:\Users\Jamie\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libinit2.o)
+    0x08000246   0x00000000   Code   RO        34414    .ARM.Collect$$libinit$$00000013  c:\Users\Jamie\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libinit2.o)
+    0x08000246   0x00000000   Code   RO        34416    .ARM.Collect$$libinit$$00000015  c:\Users\Jamie\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libinit2.o)
+    0x08000246   0x00000000   Code   RO        34418    .ARM.Collect$$libinit$$00000017  c:\Users\Jamie\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libinit2.o)
+    0x08000246   0x00000000   Code   RO        34420    .ARM.Collect$$libinit$$00000019  c:\Users\Jamie\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libinit2.o)
+    0x08000246   0x00000000   Code   RO        34422    .ARM.Collect$$libinit$$0000001B  c:\Users\Jamie\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libinit2.o)
+    0x08000246   0x00000000   Code   RO        34424    .ARM.Collect$$libinit$$0000001D  c:\Users\Jamie\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libinit2.o)
+    0x08000246   0x00000000   Code   RO        34426    .ARM.Collect$$libinit$$0000001F  c:\Users\Jamie\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libinit2.o)
+    0x08000246   0x00000000   Code   RO        34428    .ARM.Collect$$libinit$$00000021  c:\Users\Jamie\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libinit2.o)
+    0x08000246   0x00000000   Code   RO        34430    .ARM.Collect$$libinit$$00000023  c:\Users\Jamie\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libinit2.o)
+    0x08000246   0x00000004   Code   RO        34431    .ARM.Collect$$libinit$$00000024  c:\Users\Jamie\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libinit2.o)
+    0x0800024a   0x00000000   Code   RO        34432    .ARM.Collect$$libinit$$00000025  c:\Users\Jamie\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libinit2.o)
+    0x0800024a   0x00000000   Code   RO        34436    .ARM.Collect$$libinit$$0000002C  c:\Users\Jamie\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libinit2.o)
+    0x0800024a   0x00000000   Code   RO        34438    .ARM.Collect$$libinit$$0000002E  c:\Users\Jamie\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libinit2.o)
+    0x0800024a   0x00000000   Code   RO        34440    .ARM.Collect$$libinit$$00000030  c:\Users\Jamie\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libinit2.o)
+    0x0800024a   0x00000004   Code   RO        34441    .ARM.Collect$$libinit$$00000031  c:\Users\Jamie\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libinit2.o)
+    0x0800024e   0x00000000   Code   RO        34442    .ARM.Collect$$libinit$$00000032  c:\Users\Jamie\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libinit2.o)
+    0x0800024e   0x00000002   Code   RO        34443    .ARM.Collect$$libinit$$00000033  c:\Users\Jamie\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libinit2.o)
+    0x08000250   0x00000000   Code   RO        34872    .ARM.Collect$$libshutdown$$00000004  c:\Users\Jamie\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libshutdown2.o)
+    0x08000250   0x00000000   Code   RO        34883    .ARM.Collect$$libshutdown$$0000000F  c:\Users\Jamie\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libshutdown2.o)
+    0x08000250   0x000000c8   Code   RO           88    .text               BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/TOOLCHAIN_ARM/TARGET_RTOS_M4_M7/irq_cm4f.o
+    0x08000318   0x0000005c   Code   RO        26029    .text               BUILD/NUCLEO_F446RE/ARMC6/mbed-os/platform/source/TARGET_CORTEX_M/TOOLCHAIN_ARM/except.o
+    0x08000374   0x00000024   Code   RO        33232    .text               BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F446xE/TOOLCHAIN_ARM/startup_stm32f446xx.o
+    0x08000398   0x00000002   Code   RO        33940    .text               c:\Users\Jamie\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(use_no_semi_2.o)
+    0x0800039a   0x00000004   Code   RO        33949    .text               c:\Users\Jamie\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(rt_errno_addr_twolibspace.o)
+    0x0800039e   0x000000a6   Code   RO        33961    .text               c:\Users\Jamie\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(h1_alloc_threads.o)
+    0x08000444   0x00000076   Code   RO        33963    .text               c:\Users\Jamie\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(h1_free_threads.o)
+    0x080004ba   0x000000f0   Code   RO        34015    .text               c:\Users\Jamie\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(lludivv7m.o)
+    0x080005aa   0x00000026   Code   RO        34017    .text               c:\Users\Jamie\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(llshl.o)
+    0x080005d0   0x00000026   Code   RO        34019    .text               c:\Users\Jamie\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(llushr.o)
+    0x080005f6   0x00000002   PAD
+    0x080005f8   0x000000f8   Code   RO        34057    .text               c:\Users\Jamie\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(fseek.o)
+    0x080006f0   0x00000042   Code   RO        34059    .text               c:\Users\Jamie\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(ftell.o)
+    0x08000732   0x0000004c   Code   RO        34077    .text               c:\Users\Jamie\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(fclose.o)
+    0x0800077e   0x00000024   Code   RO        34081    .text               c:\Users\Jamie\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(fputc_locked.o)
+    0x080007a2   0x00000002   PAD
+    0x080007a4   0x00000090   Code   RO        34089    .text               c:\Users\Jamie\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(fflush_locked.o)
+    0x08000834   0x0000014c   Code   RO        34091    .text               c:\Users\Jamie\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(fopen_locked.o)
+    0x08000980   0x0000001c   Code   RO        34107    .text               c:\Users\Jamie\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(strspn.o)
+    0x0800099c   0x00000058   Code   RO        34111    .text               c:\Users\Jamie\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(memcmp.o)
+    0x080009f4   0x0000003e   Code   RO        34117    .text               c:\Users\Jamie\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(strlen.o)
+    0x08000a32   0x0000008a   Code   RO        34125    .text               c:\Users\Jamie\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(rt_memcpy_v6.o)
+    0x08000abc   0x00000064   Code   RO        34129    .text               c:\Users\Jamie\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(rt_memcpy_w.o)
+    0x08000b20   0x00000044   Code   RO        34139    .text               c:\Users\Jamie\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(rt_memclr.o)
+    0x08000b64   0x0000004e   Code   RO        34141    .text               c:\Users\Jamie\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(rt_memclr_w.o)
+    0x08000bb2   0x00000006   PAD
+    0x08000bb8   0x0000007c   Code   RO        34145    .text               c:\Users\Jamie\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(strcmpv7em.o)
+    0x08000c34   0x00000006   Code   RO        34150    .text               c:\Users\Jamie\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(heapauxi.o)
+    0x08000c3a   0x00000002   PAD
+    0x08000c3c   0x00000024   Code   RO        34158    .text               c:\Users\Jamie\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(init_aeabi.o)
+    0x08000c60   0x00000008   Code   RO        34300    .text               c:\Users\Jamie\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libspace.o)
+    0x08000c68   0x00000002   Code   RO        34303    .text               c:\Users\Jamie\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(use_no_semi.o)
+    0x08000c6a   0x0000000a   Code   RO        34314    .text               c:\Users\Jamie\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(rt_heap_descriptor_twolibspace.o)
+    0x08000c74   0x00000004   Code   RO        34323    .text               c:\Users\Jamie\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(hguard.o)
+    0x08000c78   0x0000008a   Code   RO        34325    .text               c:\Users\Jamie\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(init_alloc.o)
+    0x08000d02   0x00000012   Code   RO        34333    .text               c:\Users\Jamie\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(h1_init_threads.o)
+    0x08000d14   0x000001d6   Code   RO        34371    .text               c:\Users\Jamie\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(flsbuf.o)
+    0x08000eea   0x00000002   PAD
+    0x08000eec   0x000000f0   Code   RO        34375    .text               c:\Users\Jamie\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(stdio.o)
+    0x08000fdc   0x00000068   Code   RO        34384    .text               c:\Users\Jamie\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(setvbuf_locked.o)
+    0x08001044   0x000001c8   Code   RO        34386    .text               c:\Users\Jamie\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(initio_locked.o)
+    0x0800120c   0x00000000   Code   RO        34802    .text               c:\Users\Jamie\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(maybetermalloc2.o)
+    0x0800120c   0x00000052   Code   RO        34805    .text               c:\Users\Jamie\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(h1_extend_threads.o)
+    0x0800125e   0x00000002   PAD
+    0x08001260   0x00000040   Code   RO        34835    .text               c:\Users\Jamie\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(puts_locked.o)
+    0x080012a0   0x0000000e   Code   RO        34853    .text               c:\Users\Jamie\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(defsig_rtred_outer.o)
+    0x080012ae   0x0000000e   Code   RO        34857    .text               c:\Users\Jamie\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(defsig_rtmem_outer.o)
+    0x080012bc   0x00000010   Code   RO        34930    .text               c:\Users\Jamie\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(term_alloc.o)
+    0x080012cc   0x0000000a   Code   RO        34967    .text               c:\Users\Jamie\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(defsig_exit.o)
+    0x080012d6   0x00000002   PAD
+    0x080012d8   0x00000034   Code   RO        34975    .text               c:\Users\Jamie\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(defsig_rtred_inner.o)
+    0x0800130c   0x00000050   Code   RO        34977    .text               c:\Users\Jamie\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(defsig_rtmem_inner.o)
+    0x0800135c   0x0000000a   Code   RO        35005    .text               c:\Users\Jamie\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(h1_final_threads.o)
+    0x08001366   0x00000032   Code   RO        35017    .text               c:\Users\Jamie\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(defsig_general.o)
+    0x08001398   0x0000002c   Code   RO        26596    .text.$Sub$$__2printf  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/platform/source/minimal-printf/mbed_printf_armlink_overrides.o
+    0x080013c4   0x00000028   Code   RO        26402    .text.$Sub$$__rt_lib_init  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x080013ec   0x00000004   Code   RO        26626    .text.$Sub$$_printf_d  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/platform/source/minimal-printf/mbed_printf_armlink_overrides.o
+    0x080013f0   0x00000004   Code   RO        26654    .text.$Sub$$_printf_int_dec  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/platform/source/minimal-printf/mbed_printf_armlink_overrides.o
+    0x080013f4   0x00000004   Code   RO        26700    .text.$Sub$$_printf_percent  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/platform/source/minimal-printf/mbed_printf_armlink_overrides.o
+    0x080013f8   0x0000000c   Code   RO        26752    .text.$Sub$$vsnprintf  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/platform/source/minimal-printf/mbed_printf_wrapper.o
+    0x08001404   0x00000008   Code   RO        33398    .text.CAN1_RX0_IRQHandler  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/can_api.o
+    0x0800140c   0x00000008   Code   RO        33404    .text.CAN1_SCE_IRQHandler  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/can_api.o
+    0x08001414   0x0000000c   Code   RO        33402    .text.CAN1_TX_IRQHandler  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/can_api.o
+    0x08001420   0x00000008   Code   RO        33406    .text.CAN2_RX0_IRQHandler  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/can_api.o
+    0x08001428   0x00000008   Code   RO        33410    .text.CAN2_SCE_IRQHandler  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/can_api.o
+    0x08001430   0x0000000c   Code   RO        33408    .text.CAN2_TX_IRQHandler  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/can_api.o
+    0x0800143c   0x00000002   Code   RO          139    .text.EvrRtxKernelError  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_evr.o
+    0x0800143e   0x00000002   Code   RO          165    .text.EvrRtxMessageQueueError  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_evr.o
+    0x08001440   0x00000002   Code   RO          159    .text.EvrRtxMutexError  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_evr.o
+    0x08001442   0x00000002   Code   RO          161    .text.EvrRtxSemaphoreError  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_evr.o
+    0x08001444   0x00000002   Code   RO          143    .text.EvrRtxThreadError  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_evr.o
+    0x08001446   0x00000002   PAD
+    0x08001448   0x00000014   Code   RO          718    .text.EvrRtxThreadExit  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/device/rtos/source/mbed_rtx_handlers.o
+    0x0800145c   0x00000010   Code   RO          720    .text.EvrRtxThreadTerminate  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/device/rtos/source/mbed_rtx_handlers.o
+    0x0800146c   0x000000b4   Code   RO        28670    .text.HAL_CAN_ConfigFilter  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/STM32Cube_FW/STM32F4xx_HAL_Driver/Legacy/stm32f4xx_hal_can_legacy.o
+    0x08001520   0x00000104   Code   RO        28666    .text.HAL_CAN_Init  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/STM32Cube_FW/STM32F4xx_HAL_Driver/Legacy/stm32f4xx_hal_can_legacy.o
+    0x08001624   0x00000024   Code   RO        29106    .text.HAL_DMA_Abort_IT  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/STM32Cube_FW/STM32F4xx_HAL_Driver/stm32f4xx_hal_dma.o
+    0x08001648   0x00000006   Code   RO        29116    .text.HAL_DMA_GetState  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/STM32Cube_FW/STM32F4xx_HAL_Driver/stm32f4xx_hal_dma.o
+    0x0800164e   0x00000002   PAD
+    0x08001650   0x0000006c   Code   RO        33470    .text.HAL_GetTick   BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/hal_tick_overrides.o
+    0x080016bc   0x00000030   Code   RO        30088    .text.HAL_I2CEx_ConfigAnalogFilter  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/STM32Cube_FW/STM32F4xx_HAL_Driver/stm32f4xx_hal_i2c_ex.o
+    0x080016ec   0x0000001c   Code   RO        33559    .text.HAL_I2C_AbortCpltCallback  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/i2c_api.o
+    0x08001708   0x00000016   Code   RO        33545    .text.HAL_I2C_AddrCallback  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/i2c_api.o
+    0x0800171e   0x00000002   PAD
+    0x08001720   0x00000104   Code   RO        29876    .text.HAL_I2C_ER_IRQHandler  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/STM32Cube_FW/STM32F4xx_HAL_Driver/stm32f4xx_hal_i2c.o
+    0x08001824   0x00000804   Code   RO        29872    .text.HAL_I2C_EV_IRQHandler  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/STM32Cube_FW/STM32F4xx_HAL_Driver/stm32f4xx_hal_i2c.o
+    0x08002028   0x00000036   Code   RO        29864    .text.HAL_I2C_EnableListen_IT  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/STM32Cube_FW/STM32F4xx_HAL_Driver/stm32f4xx_hal_i2c.o
+    0x0800205e   0x00000038   Code   RO        33531    .text.HAL_I2C_ErrorCallback  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/i2c_api.o
+    0x08002096   0x00000002   PAD
+    0x08002098   0x00000130   Code   RO        29784    .text.HAL_I2C_Init  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/STM32Cube_FW/STM32F4xx_HAL_Driver/stm32f4xx_hal_i2c.o
+    0x080021c8   0x00000012   Code   RO        33551    .text.HAL_I2C_ListenCpltCallback  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/i2c_api.o
+    0x080021da   0x0000000c   Code   RO        33529    .text.HAL_I2C_MasterRxCpltCallback  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/i2c_api.o
+    0x080021e6   0x00000036   Code   RO        33527    .text.HAL_I2C_MasterTxCpltCallback  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/i2c_api.o
+    0x0800221c   0x000000c8   Code   RO        29850    .text.HAL_I2C_Master_Seq_Receive_IT  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/STM32Cube_FW/STM32F4xx_HAL_Driver/stm32f4xx_hal_i2c.o
+    0x080022e4   0x00000098   Code   RO        29846    .text.HAL_I2C_Master_Seq_Transmit_IT  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/STM32Cube_FW/STM32F4xx_HAL_Driver/stm32f4xx_hal_i2c.o
+    0x0800237c   0x00000002   Code   RO        29892    .text.HAL_I2C_MemRxCpltCallback  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/STM32Cube_FW/STM32F4xx_HAL_Driver/stm32f4xx_hal_i2c.o
+    0x0800237e   0x00000002   Code   RO        29890    .text.HAL_I2C_MemTxCpltCallback  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/STM32Cube_FW/STM32F4xx_HAL_Driver/stm32f4xx_hal_i2c.o
+    0x08002380   0x00000036   Code   RO        33549    .text.HAL_I2C_SlaveRxCpltCallback  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/i2c_api.o
+    0x080023b6   0x00000008   Code   RO        33547    .text.HAL_I2C_SlaveTxCpltCallback  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/i2c_api.o
+    0x080023be   0x00000040   Code   RO        29860    .text.HAL_I2C_Slave_Seq_Receive_IT  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/STM32Cube_FW/STM32F4xx_HAL_Driver/stm32f4xx_hal_i2c.o
+    0x080023fe   0x00000002   PAD
+    0x08002400   0x00000034   Code   RO        28714    .text.HAL_Init      BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/STM32Cube_FW/STM32F4xx_HAL_Driver/stm32f4xx_hal.o
+    0x08002434   0x0000000a   Code   RO        33468    .text.HAL_InitTick  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/hal_tick_overrides.o
+    0x0800243e   0x00000002   PAD
+    0x08002440   0x00000024   Code   RO        28915    .text.HAL_NVIC_DisableIRQ  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/STM32Cube_FW/STM32F4xx_HAL_Driver/stm32f4xx_hal_cortex.o
+    0x08002464   0x00000020   Code   RO        28907    .text.HAL_NVIC_SetPriorityGrouping  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/STM32Cube_FW/STM32F4xx_HAL_Driver/stm32f4xx_hal_cortex.o
+    0x08002484   0x00000068   Code   RO        30675    .text.HAL_PWREx_EnableOverDrive  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/STM32Cube_FW/STM32F4xx_HAL_Driver/stm32f4xx_hal_pwr_ex.o
+    0x080024ec   0x00000018   Code   RO        30629    .text.HAL_PWR_EnableBkUpAccess  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/STM32Cube_FW/STM32F4xx_HAL_Driver/stm32f4xx_hal_pwr.o
+    0x08002504   0x00000020   Code   RO        30643    .text.HAL_PWR_EnterSLEEPMode  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/STM32Cube_FW/STM32F4xx_HAL_Driver/stm32f4xx_hal_pwr.o
+    0x08002524   0x00000034   Code   RO        30645    .text.HAL_PWR_EnterSTOPMode  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/STM32Cube_FW/STM32F4xx_HAL_Driver/stm32f4xx_hal_pwr.o
+    0x08002558   0x00000018   Code   RO        30857    .text.HAL_RCCEx_SelectLSEMode  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/STM32Cube_FW/STM32F4xx_HAL_Driver/stm32f4xx_hal_rcc_ex.o
+    0x08002570   0x00000114   Code   RO        30819    .text.HAL_RCC_ClockConfig  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/STM32Cube_FW/STM32F4xx_HAL_Driver/stm32f4xx_hal_rcc.o
+    0x08002684   0x00000038   Code   RO        30837    .text.HAL_RCC_GetClockConfig  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/STM32Cube_FW/STM32F4xx_HAL_Driver/stm32f4xx_hal_rcc.o
+    0x080026bc   0x0000009c   Code   RO        30873    .text.HAL_RCC_GetOscConfig  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/STM32Cube_FW/STM32F4xx_HAL_Driver/stm32f4xx_hal_rcc_ex.o
+    0x08002758   0x00000014   Code   RO        30831    .text.HAL_RCC_GetPCLK1Freq  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/STM32Cube_FW/STM32F4xx_HAL_Driver/stm32f4xx_hal_rcc.o
+    0x0800276c   0x00000020   Code   RO        30833    .text.HAL_RCC_GetPCLK2Freq  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/STM32Cube_FW/STM32F4xx_HAL_Driver/stm32f4xx_hal_rcc.o
+    0x0800278c   0x00000068   Code   RO        30867    .text.HAL_RCC_GetSysClockFreq  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/STM32Cube_FW/STM32F4xx_HAL_Driver/stm32f4xx_hal_rcc_ex.o
+    0x080027f4   0x0000034c   Code   RO        30871    .text.HAL_RCC_OscConfig  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/STM32Cube_FW/STM32F4xx_HAL_Driver/stm32f4xx_hal_rcc_ex.o
+    0x08002b40   0x0000001e   Code   RO        31880    .text.HAL_TIM_OC_Init  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/STM32Cube_FW/STM32F4xx_HAL_Driver/stm32f4xx_hal_tim.o
+    0x08002b5e   0x00000002   PAD
+    0x08002b60   0x000000b8   Code   RO        31888    .text.HAL_TIM_OC_Start  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/STM32Cube_FW/STM32F4xx_HAL_Driver/stm32f4xx_hal_tim.o
+    0x08002c18   0x0000002c   Code   RO        32382    .text.HAL_UART_Init  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/STM32Cube_FW/STM32F4xx_HAL_Driver/stm32f4xx_hal_uart.o
+    0x08002c44   0x00000002   Code   RO        32384    .text.HAL_UART_MspInit  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/STM32Cube_FW/STM32F4xx_HAL_Driver/stm32f4xx_hal_uart.o
+    0x08002c46   0x00000002   PAD
+    0x08002c48   0x000000ac   Code   RO        29858    .text.I2C_DMAAbort  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/STM32Cube_FW/STM32F4xx_HAL_Driver/stm32f4xx_hal_i2c.o
+    0x08002cf4   0x00000128   Code   RO        29870    .text.I2C_ITError   BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/STM32Cube_FW/STM32F4xx_HAL_Driver/stm32f4xx_hal_i2c.o
+    0x08002e1c   0x0000009e   Code   RO        29874    .text.I2C_MemoryTransmit_TXE_BTF  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/STM32Cube_FW/STM32F4xx_HAL_Driver/stm32f4xx_hal_i2c.o
+    0x08002eba   0x00000040   Code   RO          354    .text.MessageQueueGet  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_msgqueue.o
+    0x08002efa   0x00000058   Code   RO          348    .text.MessageQueuePut  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_msgqueue.o
+    0x08002f52   0x0000001c   Code   RO          346    .text.MessageQueueRemove  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_msgqueue.o
+    0x08002f6e   0x00000002   PAD
+    0x08002f70   0x00000008   Code   RO          642    .text.OS_Tick_AcknowledgeIRQ  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/Source/os_systick.o
+    0x08002f78   0x00000024   Code   RO          638    .text.OS_Tick_Enable  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/Source/os_systick.o
+    0x08002f9c   0x00000040   Code   RO          636    .text.OS_Tick_Setup  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/Source/os_systick.o
+    0x08002fdc   0x00000006   Code   RO           12    .text.OUTLINED_FUNCTION_0  BUILD/NUCLEO_F446RE/ARMC6/main.o
+    0x08002fe2   0x0000000c   Code   RO          227    .text.OUTLINED_FUNCTION_0  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_kernel.o
+    0x08002fee   0x0000000e   Code   RO          362    .text.OUTLINED_FUNCTION_0  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_msgqueue.o
+    0x08002ffc   0x0000000e   Code   RO          396    .text.OUTLINED_FUNCTION_0  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_mutex.o
+    0x0800300a   0x0000000e   Code   RO          432    .text.OUTLINED_FUNCTION_0  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_semaphore.o
+    0x08003018   0x0000000c   Code   RO          574    .text.OUTLINED_FUNCTION_0  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_thread.o
+    0x08003024   0x00000018   Code   RO        22421    .text.OUTLINED_FUNCTION_0  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/drivers/source/BufferedSerial.o
+    0x0800303c   0x0000000c   Code   RO        22605    .text.OUTLINED_FUNCTION_0  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/drivers/source/CAN.o
+    0x08003048   0x0000000c   Code   RO        22703    .text.OUTLINED_FUNCTION_0  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/drivers/source/I2C.o
+    0x08003054   0x0000000c   Code   RO        25397    .text.OUTLINED_FUNCTION_0  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/hal/source/mbed_pinmap_common.o
+    0x08003060   0x00000006   Code   RO        25456    .text.OUTLINED_FUNCTION_0  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/hal/source/mbed_ticker_api.o
+    0x08003066   0x0000000a   Code   RO        25486    .text.OUTLINED_FUNCTION_0  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/hal/source/mpu/mbed_mpu_v7m.o
+    0x08003070   0x00000008   Code   RO        25710    .text.OUTLINED_FUNCTION_0  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/platform/source/FileBase.o
+    0x08003078   0x00000008   Code   RO        26498    .text.OUTLINED_FUNCTION_0  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x08003080   0x00000010   Code   RO        26736    .text.OUTLINED_FUNCTION_0  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/platform/source/minimal-printf/mbed_printf_implementation.o
+    0x08003090   0x0000000c   Code   RO        26857    .text.OUTLINED_FUNCTION_0  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/rtos/source/Mutex.o
+    0x0800309c   0x0000000c   Code   RO        26971    .text.OUTLINED_FUNCTION_0  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/rtos/source/Thread.o
+    0x080030a8   0x00000016   Code   RO        30092    .text.OUTLINED_FUNCTION_0  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/STM32Cube_FW/STM32F4xx_HAL_Driver/stm32f4xx_hal_i2c_ex.o
+    0x080030be   0x00000008   Code   RO        30681    .text.OUTLINED_FUNCTION_0  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/STM32Cube_FW/STM32F4xx_HAL_Driver/stm32f4xx_hal_pwr_ex.o
+    0x080030c6   0x0000000c   Code   RO        30843    .text.OUTLINED_FUNCTION_0  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/STM32Cube_FW/STM32F4xx_HAL_Driver/stm32f4xx_hal_rcc.o
+    0x080030d2   0x00000016   Code   RO        32498    .text.OUTLINED_FUNCTION_0  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/STM32Cube_FW/STM32F4xx_HAL_Driver/stm32f4xx_hal_uart.o
+    0x080030e8   0x00000008   Code   RO        33418    .text.OUTLINED_FUNCTION_0  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/can_api.o
+    0x080030f0   0x00000018   Code   RO        33569    .text.OUTLINED_FUNCTION_0  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/i2c_api.o
+    0x08003108   0x00000008   Code   RO        33738    .text.OUTLINED_FUNCTION_0  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/serial_api.o
+    0x08003110   0x00000016   Code   RO        33917    .text.OUTLINED_FUNCTION_0  BUILD/NUCLEO_F446RE/ARMC6/pca85073adp/PCA85073ADP.o
+    0x08003126   0x00000006   Code   RO           14    .text.OUTLINED_FUNCTION_1  BUILD/NUCLEO_F446RE/ARMC6/main.o
+    0x0800312c   0x0000000c   Code   RO          229    .text.OUTLINED_FUNCTION_1  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_kernel.o
+    0x08003138   0x0000000c   Code   RO          364    .text.OUTLINED_FUNCTION_1  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_msgqueue.o
+    0x08003144   0x00000008   Code   RO          398    .text.OUTLINED_FUNCTION_1  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_mutex.o
+    0x0800314c   0x0000000a   Code   RO          434    .text.OUTLINED_FUNCTION_1  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_semaphore.o
+    0x08003156   0x00000008   Code   RO          576    .text.OUTLINED_FUNCTION_1  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_thread.o
+    0x0800315e   0x00000014   Code   RO        22423    .text.OUTLINED_FUNCTION_1  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/drivers/source/BufferedSerial.o
+    0x08003172   0x00000016   Code   RO        22705    .text.OUTLINED_FUNCTION_1  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/drivers/source/I2C.o
+    0x08003188   0x0000000a   Code   RO        23065    .text.OUTLINED_FUNCTION_1  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/drivers/source/SerialBase.o
+    0x08003192   0x00000006   Code   RO        25712    .text.OUTLINED_FUNCTION_1  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/platform/source/FileBase.o
+    0x08003198   0x00000008   Code   RO        26500    .text.OUTLINED_FUNCTION_1  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x080031a0   0x00000012   Code   RO        26738    .text.OUTLINED_FUNCTION_1  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/platform/source/minimal-printf/mbed_printf_implementation.o
+    0x080031b2   0x00000006   Code   RO        26973    .text.OUTLINED_FUNCTION_1  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/rtos/source/Thread.o
+    0x080031b8   0x00000012   Code   RO        30094    .text.OUTLINED_FUNCTION_1  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/STM32Cube_FW/STM32F4xx_HAL_Driver/stm32f4xx_hal_i2c_ex.o
+    0x080031ca   0x00000006   Code   RO        30877    .text.OUTLINED_FUNCTION_1  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/STM32Cube_FW/STM32F4xx_HAL_Driver/stm32f4xx_hal_rcc_ex.o
+    0x080031d0   0x0000002e   Code   RO        32086    .text.OUTLINED_FUNCTION_1  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/STM32Cube_FW/STM32F4xx_HAL_Driver/stm32f4xx_hal_tim.o
+    0x080031fe   0x0000000c   Code   RO        32500    .text.OUTLINED_FUNCTION_1  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/STM32Cube_FW/STM32F4xx_HAL_Driver/stm32f4xx_hal_uart.o
+    0x0800320a   0x0000000a   Code   RO        33333    .text.OUTLINED_FUNCTION_1  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/serial_device.o
+    0x08003214   0x00000010   Code   RO        33919    .text.OUTLINED_FUNCTION_1  BUILD/NUCLEO_F446RE/ARMC6/pca85073adp/PCA85073ADP.o
+    0x08003224   0x0000000e   Code   RO        32104    .text.OUTLINED_FUNCTION_10  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/STM32Cube_FW/STM32F4xx_HAL_Driver/stm32f4xx_hal_tim.o
+    0x08003232   0x0000000a   Code   RO        23087    .text.OUTLINED_FUNCTION_12  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/drivers/source/SerialBase.o
+    0x0800323c   0x0000000a   Code   RO        32108    .text.OUTLINED_FUNCTION_12  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/STM32Cube_FW/STM32F4xx_HAL_Driver/stm32f4xx_hal_tim.o
+    0x08003246   0x00000012   Code   RO        32522    .text.OUTLINED_FUNCTION_12  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/STM32Cube_FW/STM32F4xx_HAL_Driver/stm32f4xx_hal_uart.o
+    0x08003258   0x00000006   Code   RO        32110    .text.OUTLINED_FUNCTION_13  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/STM32Cube_FW/STM32F4xx_HAL_Driver/stm32f4xx_hal_tim.o
+    0x0800325e   0x00000020   Code   RO        29944    .text.OUTLINED_FUNCTION_18  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/STM32Cube_FW/STM32F4xx_HAL_Driver/stm32f4xx_hal_i2c.o
+    0x0800327e   0x0000001e   Code   RO        29946    .text.OUTLINED_FUNCTION_19  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/STM32Cube_FW/STM32F4xx_HAL_Driver/stm32f4xx_hal_i2c.o
+    0x0800329c   0x00000008   Code   RO          231    .text.OUTLINED_FUNCTION_2  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_kernel.o
+    0x080032a4   0x0000000a   Code   RO          400    .text.OUTLINED_FUNCTION_2  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_mutex.o
+    0x080032ae   0x0000000c   Code   RO          578    .text.OUTLINED_FUNCTION_2  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_thread.o
+    0x080032ba   0x00000014   Code   RO        22707    .text.OUTLINED_FUNCTION_2  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/drivers/source/I2C.o
+    0x080032ce   0x00000006   Code   RO        23067    .text.OUTLINED_FUNCTION_2  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/drivers/source/SerialBase.o
+    0x080032d4   0x00000008   Code   RO        26502    .text.OUTLINED_FUNCTION_2  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x080032dc   0x00000012   Code   RO        30879    .text.OUTLINED_FUNCTION_2  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/STM32Cube_FW/STM32F4xx_HAL_Driver/stm32f4xx_hal_rcc_ex.o
+    0x080032ee   0x0000001a   Code   RO        32502    .text.OUTLINED_FUNCTION_2  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/STM32Cube_FW/STM32F4xx_HAL_Driver/stm32f4xx_hal_uart.o
+    0x08003308   0x00000012   Code   RO        33573    .text.OUTLINED_FUNCTION_2  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/i2c_api.o
+    0x0800331a   0x0000000a   Code   RO        33921    .text.OUTLINED_FUNCTION_2  BUILD/NUCLEO_F446RE/ARMC6/pca85073adp/PCA85073ADP.o
+    0x08003324   0x0000000a   Code   RO        29952    .text.OUTLINED_FUNCTION_22  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/STM32Cube_FW/STM32F4xx_HAL_Driver/stm32f4xx_hal_i2c.o
+    0x0800332e   0x0000000a   Code   RO        32134    .text.OUTLINED_FUNCTION_25  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/STM32Cube_FW/STM32F4xx_HAL_Driver/stm32f4xx_hal_tim.o
+    0x08003338   0x0000000a   Code   RO        29960    .text.OUTLINED_FUNCTION_26  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/STM32Cube_FW/STM32F4xx_HAL_Driver/stm32f4xx_hal_i2c.o
+    0x08003342   0x00000010   Code   RO        29962    .text.OUTLINED_FUNCTION_27  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/STM32Cube_FW/STM32F4xx_HAL_Driver/stm32f4xx_hal_i2c.o
+    0x08003352   0x00000010   Code   RO        29966    .text.OUTLINED_FUNCTION_29  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/STM32Cube_FW/STM32F4xx_HAL_Driver/stm32f4xx_hal_i2c.o
+    0x08003362   0x00000006   Code   RO          233    .text.OUTLINED_FUNCTION_3  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_kernel.o
+    0x08003368   0x00000014   Code   RO        22427    .text.OUTLINED_FUNCTION_3  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/drivers/source/BufferedSerial.o
+    0x0800337c   0x00000008   Code   RO        22611    .text.OUTLINED_FUNCTION_3  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/drivers/source/CAN.o
+    0x08003384   0x00000010   Code   RO        22709    .text.OUTLINED_FUNCTION_3  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/drivers/source/I2C.o
+    0x08003394   0x00000008   Code   RO        23069    .text.OUTLINED_FUNCTION_3  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/drivers/source/SerialBase.o
+    0x0800339c   0x00000008   Code   RO        30881    .text.OUTLINED_FUNCTION_3  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/STM32Cube_FW/STM32F4xx_HAL_Driver/stm32f4xx_hal_rcc_ex.o
+    0x080033a4   0x0000001c   Code   RO        33575    .text.OUTLINED_FUNCTION_3  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/i2c_api.o
+    0x080033c0   0x00000008   Code   RO        32150    .text.OUTLINED_FUNCTION_33  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/STM32Cube_FW/STM32F4xx_HAL_Driver/stm32f4xx_hal_tim.o
+    0x080033c8   0x0000000e   Code   RO        29980    .text.OUTLINED_FUNCTION_36  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/STM32Cube_FW/STM32F4xx_HAL_Driver/stm32f4xx_hal_i2c.o
+    0x080033d6   0x0000000c   Code   RO          582    .text.OUTLINED_FUNCTION_4  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_thread.o
+    0x080033e2   0x0000000e   Code   RO        22429    .text.OUTLINED_FUNCTION_4  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/drivers/source/BufferedSerial.o
+    0x080033f0   0x0000000e   Code   RO        28710    .text.OUTLINED_FUNCTION_4  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/STM32Cube_FW/STM32F4xx_HAL_Driver/Legacy/stm32f4xx_hal_can_legacy.o
+    0x080033fe   0x00000032   Code   RO        29916    .text.OUTLINED_FUNCTION_4  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/STM32Cube_FW/STM32F4xx_HAL_Driver/stm32f4xx_hal_i2c.o
+    0x08003430   0x00000010   Code   RO        30883    .text.OUTLINED_FUNCTION_4  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/STM32Cube_FW/STM32F4xx_HAL_Driver/stm32f4xx_hal_rcc_ex.o
+    0x08003440   0x0000000e   Code   RO        33577    .text.OUTLINED_FUNCTION_4  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/i2c_api.o
+    0x0800344e   0x0000000a   Code   RO        29990    .text.OUTLINED_FUNCTION_41  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/STM32Cube_FW/STM32F4xx_HAL_Driver/stm32f4xx_hal_i2c.o
+    0x08003458   0x00000014   Code   RO        29998    .text.OUTLINED_FUNCTION_45  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/STM32Cube_FW/STM32F4xx_HAL_Driver/stm32f4xx_hal_i2c.o
+    0x0800346c   0x00000008   Code   RO        30002    .text.OUTLINED_FUNCTION_47  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/STM32Cube_FW/STM32F4xx_HAL_Driver/stm32f4xx_hal_i2c.o
+    0x08003474   0x0000000a   Code   RO        32178    .text.OUTLINED_FUNCTION_47  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/STM32Cube_FW/STM32F4xx_HAL_Driver/stm32f4xx_hal_tim.o
+    0x0800347e   0x00000014   Code   RO          584    .text.OUTLINED_FUNCTION_5  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_thread.o
+    0x08003492   0x00000006   Code   RO        22431    .text.OUTLINED_FUNCTION_5  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/drivers/source/BufferedSerial.o
+    0x08003498   0x00000008   Code   RO        22615    .text.OUTLINED_FUNCTION_5  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/drivers/source/CAN.o
+    0x080034a0   0x00000008   Code   RO        22713    .text.OUTLINED_FUNCTION_5  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/drivers/source/I2C.o
+    0x080034a8   0x0000000e   Code   RO        23073    .text.OUTLINED_FUNCTION_5  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/drivers/source/SerialBase.o
+    0x080034b6   0x0000000a   Code   RO        30885    .text.OUTLINED_FUNCTION_5  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/STM32Cube_FW/STM32F4xx_HAL_Driver/stm32f4xx_hal_rcc_ex.o
+    0x080034c0   0x0000000a   Code   RO        33579    .text.OUTLINED_FUNCTION_5  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/i2c_api.o
+    0x080034ca   0x00000014   Code   RO        33927    .text.OUTLINED_FUNCTION_5  BUILD/NUCLEO_F446RE/ARMC6/pca85073adp/PCA85073ADP.o
+    0x080034de   0x00000006   Code   RO        30012    .text.OUTLINED_FUNCTION_52  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/STM32Cube_FW/STM32F4xx_HAL_Driver/stm32f4xx_hal_i2c.o
+    0x080034e4   0x0000000e   Code   RO        30016    .text.OUTLINED_FUNCTION_54  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/STM32Cube_FW/STM32F4xx_HAL_Driver/stm32f4xx_hal_i2c.o
+    0x080034f2   0x0000000a   Code   RO        30018    .text.OUTLINED_FUNCTION_55  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/STM32Cube_FW/STM32F4xx_HAL_Driver/stm32f4xx_hal_i2c.o
+    0x080034fc   0x0000000a   Code   RO        30020    .text.OUTLINED_FUNCTION_56  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/STM32Cube_FW/STM32F4xx_HAL_Driver/stm32f4xx_hal_i2c.o
+    0x08003506   0x0000000c   Code   RO        30024    .text.OUTLINED_FUNCTION_58  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/STM32Cube_FW/STM32F4xx_HAL_Driver/stm32f4xx_hal_i2c.o
+    0x08003512   0x00000006   Code   RO        22433    .text.OUTLINED_FUNCTION_6  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/drivers/source/BufferedSerial.o
+    0x08003518   0x0000000e   Code   RO        22715    .text.OUTLINED_FUNCTION_6  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/drivers/source/I2C.o
+    0x08003526   0x0000000a   Code   RO        30887    .text.OUTLINED_FUNCTION_6  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/STM32Cube_FW/STM32F4xx_HAL_Driver/stm32f4xx_hal_rcc_ex.o
+    0x08003530   0x00000006   Code   RO        33581    .text.OUTLINED_FUNCTION_6  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/i2c_api.o
+    0x08003536   0x0000000a   Code   RO        30030    .text.OUTLINED_FUNCTION_61  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/STM32Cube_FW/STM32F4xx_HAL_Driver/stm32f4xx_hal_i2c.o
+    0x08003540   0x0000000a   Code   RO        30032    .text.OUTLINED_FUNCTION_62  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/STM32Cube_FW/STM32F4xx_HAL_Driver/stm32f4xx_hal_i2c.o
+    0x0800354a   0x00000012   Code   RO        30036    .text.OUTLINED_FUNCTION_64  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/STM32Cube_FW/STM32F4xx_HAL_Driver/stm32f4xx_hal_i2c.o
+    0x0800355c   0x00000012   Code   RO        30040    .text.OUTLINED_FUNCTION_66  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/STM32Cube_FW/STM32F4xx_HAL_Driver/stm32f4xx_hal_i2c.o
+    0x0800356e   0x00000006   Code   RO        22435    .text.OUTLINED_FUNCTION_7  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/drivers/source/BufferedSerial.o
+    0x08003574   0x0000000a   Code   RO        22717    .text.OUTLINED_FUNCTION_7  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/drivers/source/I2C.o
+    0x0800357e   0x00000008   Code   RO        23077    .text.OUTLINED_FUNCTION_7  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/drivers/source/SerialBase.o
+    0x08003586   0x00000006   Code   RO        33583    .text.OUTLINED_FUNCTION_7  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/i2c_api.o
+    0x0800358c   0x0000000c   Code   RO        30048    .text.OUTLINED_FUNCTION_70  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/STM32Cube_FW/STM32F4xx_HAL_Driver/stm32f4xx_hal_i2c.o
+    0x08003598   0x0000000e   Code   RO        30056    .text.OUTLINED_FUNCTION_74  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/STM32Cube_FW/STM32F4xx_HAL_Driver/stm32f4xx_hal_i2c.o
+    0x080035a6   0x0000000e   Code   RO        30060    .text.OUTLINED_FUNCTION_76  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/STM32Cube_FW/STM32F4xx_HAL_Driver/stm32f4xx_hal_i2c.o
+    0x080035b4   0x0000000e   Code   RO        30062    .text.OUTLINED_FUNCTION_77  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/STM32Cube_FW/STM32F4xx_HAL_Driver/stm32f4xx_hal_i2c.o
+    0x080035c2   0x0000000e   Code   RO        30064    .text.OUTLINED_FUNCTION_78  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/STM32Cube_FW/STM32F4xx_HAL_Driver/stm32f4xx_hal_i2c.o
+    0x080035d0   0x0000000e   Code   RO        32100    .text.OUTLINED_FUNCTION_8  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/STM32Cube_FW/STM32F4xx_HAL_Driver/stm32f4xx_hal_tim.o
+    0x080035de   0x00000006   Code   RO        33585    .text.OUTLINED_FUNCTION_8  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/i2c_api.o
+    0x080035e4   0x0000000e   Code   RO        30068    .text.OUTLINED_FUNCTION_80  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/STM32Cube_FW/STM32F4xx_HAL_Driver/stm32f4xx_hal_i2c.o
+    0x080035f2   0x0000000e   Code   RO        30072    .text.OUTLINED_FUNCTION_82  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/STM32Cube_FW/STM32F4xx_HAL_Driver/stm32f4xx_hal_i2c.o
+    0x08003600   0x00000008   Code   RO        30082    .text.OUTLINED_FUNCTION_87  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/STM32Cube_FW/STM32F4xx_HAL_Driver/stm32f4xx_hal_i2c.o
+    0x08003608   0x0000000a   Code   RO        23081    .text.OUTLINED_FUNCTION_9  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/drivers/source/SerialBase.o
+    0x08003612   0x0000000a   Code   RO        32102    .text.OUTLINED_FUNCTION_9  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/STM32Cube_FW/STM32F4xx_HAL_Driver/stm32f4xx_hal_tim.o
+    0x0800361c   0x0000002e   Code   RO          426    .text.SemaphoreTokenIncrement  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_semaphore.o
+    0x0800364a   0x00000002   PAD
+    0x0800364c   0x00000028   Code   RO        33235    .text.SetSysClock   BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F446xE/system_clock.o
+    0x08003674   0x000000b4   Code   RO        33237    .text.SetSysClock_PLL_HSE  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F446xE/system_clock.o
+    0x08003728   0x00000144   Code   RO        33424    .text.Set_GPIO_Clock  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/gpio_api.o
+    0x0800386c   0x0000006c   Code   RO        33200    .text.SystemCoreClockUpdate  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/STM32Cube_FW/system_stm32f4xx.o
+    0x080038d8   0x0000001c   Code   RO        33198    .text.SystemInit    BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/STM32Cube_FW/system_stm32f4xx.o
+    0x080038f4   0x000000d4   Code   RO        31856    .text.TIM_Base_SetConfig  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/STM32Cube_FW/STM32F4xx_HAL_Driver/stm32f4xx_hal_tim.o
+    0x080039c8   0x0000001e   Code   RO        31890    .text.TIM_CCxChannelCmd  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/STM32Cube_FW/STM32F4xx_HAL_Driver/stm32f4xx_hal_tim.o
+    0x080039e6   0x00000064   Code   RO          526    .text.ThreadFlagsCheck  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_thread.o
+    0x08003a4a   0x00000002   PAD
+    0x08003a4c   0x00000048   Code   RO          616    .text.TimerInsert   BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_timer.o
+    0x08003a94   0x000000ac   Code   RO        32386    .text.UART_SetConfig  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/STM32Cube_FW/STM32F4xx_HAL_Driver/stm32f4xx_hal_uart.o
+    0x08003b40   0x0000007c   Code   RO           10    .text._GLOBAL__sub_I_main.cpp  BUILD/NUCLEO_F446RE/ARMC6/main.o
+    0x08003bbc   0x00000018   Code   RO            4    .text._Z3ledv       BUILD/NUCLEO_F446RE/ARMC6/main.o
+    0x08003bd4   0x00000280   Code   RO            6    .text._Z8delay100v  BUILD/NUCLEO_F446RE/ARMC6/main.o
+    0x08003e54   0x0000000e   Code   RO        26374    .text._ZL12convert_crlfi  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x08003e62   0x00000002   PAD
+    0x08003e64   0x00000010   Code   RO        21596    .text._ZL14singleton_lockv  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/connectivity/netsocket/source/nsapi_dns.o
+    0x08003e74   0x00000010   Code   RO        26470    .text._ZL14singleton_lockv  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x08003e84   0x0000000c   Code   RO        21598    .text._ZL16singleton_unlockv  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/connectivity/netsocket/source/nsapi_dns.o
+    0x08003e90   0x00000010   Code   RO        26472    .text._ZL16singleton_unlockv  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x08003ea0   0x0000001a   Code   RO          727    .text._ZL17default_idle_hookv  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/device/rtos/source/mbed_rtx_idle.o
+    0x08003eba   0x00000002   PAD
+    0x08003ebc   0x00000018   Code   RO        26366    .text._ZL18handle_open_errorsij  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x08003ed4   0x0000004c   Code   RO        26352    .text._ZL18reserve_filehandlev  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x08003f20   0x00000010   Code   RO        25648    .text._ZN10CThunkBase11cthunk_freeEPFvvE  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/platform/source/CThunkBase.o
+    0x08003f30   0x0000001e   Code   RO        33901    .text._ZN11PCA85073ADP10getWeekdayEv  BUILD/NUCLEO_F446RE/ARMC6/pca85073adp/PCA85073ADP.o
+    0x08003f4e   0x00000040   Code   RO        33891    .text._ZN11PCA85073ADP10resetAlarmEv  BUILD/NUCLEO_F446RE/ARMC6/pca85073adp/PCA85073ADP.o
+    0x08003f8e   0x00000046   Code   RO        33883    .text._ZN11PCA85073ADP11enableAlarmEv  BUILD/NUCLEO_F446RE/ARMC6/pca85073adp/PCA85073ADP.o
+    0x08003fd4   0x0000001e   Code   RO        33913    .text._ZN11PCA85073ADP11getAlarmDayEv  BUILD/NUCLEO_F446RE/ARMC6/pca85073adp/PCA85073ADP.o
+    0x08003ff2   0x0000001e   Code   RO        33911    .text._ZN11PCA85073ADP12getAlarmHourEv  BUILD/NUCLEO_F446RE/ARMC6/pca85073adp/PCA85073ADP.o
+    0x08004010   0x00000028   Code   RO        33887    .text._ZN11PCA85073ADP14checkAlarmFlagEv  BUILD/NUCLEO_F446RE/ARMC6/pca85073adp/PCA85073ADP.o
+    0x08004038   0x0000001e   Code   RO        33909    .text._ZN11PCA85073ADP14getAlarmMinuteEv  BUILD/NUCLEO_F446RE/ARMC6/pca85073adp/PCA85073ADP.o
+    0x08004056   0x0000001e   Code   RO        33907    .text._ZN11PCA85073ADP14getAlarmSecondEv  BUILD/NUCLEO_F446RE/ARMC6/pca85073adp/PCA85073ADP.o
+    0x08004074   0x0000001e   Code   RO        33915    .text._ZN11PCA85073ADP15getAlarmWeekdayEv  BUILD/NUCLEO_F446RE/ARMC6/pca85073adp/PCA85073ADP.o
+    0x08004092   0x0000001e   Code   RO        33899    .text._ZN11PCA85073ADP6getDayEv  BUILD/NUCLEO_F446RE/ARMC6/pca85073adp/PCA85073ADP.o
+    0x080040b0   0x0000001e   Code   RO        33897    .text._ZN11PCA85073ADP7getHourEv  BUILD/NUCLEO_F446RE/ARMC6/pca85073adp/PCA85073ADP.o
+    0x080040ce   0x0000001e   Code   RO        33905    .text._ZN11PCA85073ADP7getYearEv  BUILD/NUCLEO_F446RE/ARMC6/pca85073adp/PCA85073ADP.o
+    0x080040ec   0x00000078   Code   RO        33879    .text._ZN11PCA85073ADP7setDateEhhhh  BUILD/NUCLEO_F446RE/ARMC6/pca85073adp/PCA85073ADP.o
+    0x08004164   0x0000005e   Code   RO        33877    .text._ZN11PCA85073ADP7setTimeEhhh  BUILD/NUCLEO_F446RE/ARMC6/pca85073adp/PCA85073ADP.o
+    0x080041c2   0x0000001e   Code   RO        33903    .text._ZN11PCA85073ADP8getMonthEv  BUILD/NUCLEO_F446RE/ARMC6/pca85073adp/PCA85073ADP.o
+    0x080041e0   0x0000007c   Code   RO        33885    .text._ZN11PCA85073ADP8setAlarmEhhhhh  BUILD/NUCLEO_F446RE/ARMC6/pca85073adp/PCA85073ADP.o
+    0x0800425c   0x0000001e   Code   RO        33895    .text._ZN11PCA85073ADP9getMinuteEv  BUILD/NUCLEO_F446RE/ARMC6/pca85073adp/PCA85073ADP.o
+    0x0800427a   0x0000001e   Code   RO        33893    .text._ZN11PCA85073ADP9getSecondEv  BUILD/NUCLEO_F446RE/ARMC6/pca85073adp/PCA85073ADP.o
+    0x08004298   0x00000018   Code   RO        33875    .text._ZN11PCA85073ADPC2ERN4mbed3I2CE  BUILD/NUCLEO_F446RE/ARMC6/pca85073adp/PCA85073ADP.o
+    0x080042b0   0x00000014   Code   RO           33    .text._ZN4mbed10DigitalOut5writeEi  BUILD/NUCLEO_F446RE/ARMC6/main.o
+    0x080042c4   0x00000018   Code   RO           29    .text._ZN4mbed10DigitalOutC2E7PinName  BUILD/NUCLEO_F446RE/ARMC6/main.o
+    0x080042dc   0x0000001c   Code   RO           31    .text._ZN4mbed10DigitalOutC2E7PinNamei  BUILD/NUCLEO_F446RE/ARMC6/main.o
+    0x080042f8   0x00000038   Code   RO        25718    .text._ZN4mbed10FileHandle4sizeEv  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/platform/source/FileHandle.o
+    0x08004330   0x0000000a   Code   RO        22449    .text._ZN4mbed10FileHandle4tellEv  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/drivers/source/BufferedSerial.o
+    0x0800433a   0x0000000a   Code   RO        22451    .text._ZN4mbed10FileHandle6rewindEv  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/drivers/source/BufferedSerial.o
+    0x08004344   0x00000006   Code   RO        22453    .text._ZN4mbed10FileHandle8truncateEl  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/drivers/source/BufferedSerial.o
+    0x0800434a   0x00000006   Code   RO        23013    .text._ZN4mbed10SerialBase10_base_getcEv  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/drivers/source/SerialBase.o
+    0x08004350   0x0000000e   Code   RO        23015    .text._ZN4mbed10SerialBase10_base_putcEi  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/drivers/source/SerialBase.o
+    0x0800435e   0x00000002   PAD
+    0x08004360   0x00000050   Code   RO        22999    .text._ZN4mbed10SerialBase12_init_directEv  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/drivers/source/SerialBase.o
+    0x080043b0   0x00000010   Code   RO        23011    .text._ZN4mbed10SerialBase12_irq_handlerEj9SerialIrq  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/drivers/source/SerialBase.o
+    0x080043c0   0x00000088   Code   RO        23019    .text._ZN4mbed10SerialBase12enable_inputEb  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/drivers/source/SerialBase.o
+    0x08004448   0x00000088   Code   RO        23021    .text._ZN4mbed10SerialBase13enable_outputEb  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/drivers/source/SerialBase.o
+    0x080044d0   0x00000002   Code   RO        23029    .text._ZN4mbed10SerialBase4lockEv  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/drivers/source/SerialBase.o
+    0x080044d2   0x00000092   Code   RO        23009    .text._ZN4mbed10SerialBase6attachENS_8CallbackIFvvEEENS0_7IrqTypeE  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/drivers/source/SerialBase.o
+    0x08004564   0x00000002   Code   RO        23031    .text._ZN4mbed10SerialBase6unlockEv  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/drivers/source/SerialBase.o
+    0x08004566   0x00000016   Code   RO        23005    .text._ZN4mbed10SerialBase8readableEv  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/drivers/source/SerialBase.o
+    0x0800457c   0x00000016   Code   RO        23007    .text._ZN4mbed10SerialBase9writeableEv  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/drivers/source/SerialBase.o
+    0x08004592   0x00000002   PAD
+    0x08004594   0x0000009c   Code   RO        22997    .text._ZN4mbed10SerialBaseC2ERK15serial_pinmap_ti  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/drivers/source/SerialBase.o
+    0x08004630   0x0000000e   Code   RO        23035    .text._ZN4mbed10SerialBaseD0Ev  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/drivers/source/SerialBase.o
+    0x0800463e   0x00000002   PAD
+    0x08004640   0x00000044   Code   RO        23033    .text._ZN4mbed10SerialBaseD2Ev  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/drivers/source/SerialBase.o
+    0x08004684   0x0000000e   Code   RO        22764    .text._ZN4mbed11InterruptIn4readEv  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/drivers/source/InterruptIn.o
+    0x08004692   0x0000001a   Code   RO        22634    .text._ZN4mbed12DigitalInOut4modeE7PinMode  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/drivers/source/DigitalInOut.o
+    0x080046ac   0x00000018   Code   RO        22632    .text._ZN4mbed12DigitalInOut5inputEv  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/drivers/source/DigitalInOut.o
+    0x080046c4   0x00000018   Code   RO        22630    .text._ZN4mbed12DigitalInOut6outputEv  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/drivers/source/DigitalInOut.o
+    0x080046dc   0x00000024   Code   RO         2305    .text._ZN4mbed12DigitalInOutC2E7PinName12PinDirection7PinModei  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/connectivity/drivers/cellular/Altair/ALT1250/PPP/ALT1250_PPP.o
+    0x08004700   0x0000001c   Code   RO        22413    .text._ZN4mbed14BufferedSerial12enable_inputEb  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/drivers/source/BufferedSerial.o
+    0x0800471c   0x00000008   Code   RO        22445    .text._ZN4mbed14BufferedSerial12set_blockingEb  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/drivers/source/BufferedSerial.o
+    0x08004724   0x0000001c   Code   RO        22417    .text._ZN4mbed14BufferedSerial13enable_outputEb  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/drivers/source/BufferedSerial.o
+    0x08004740   0x00000048   Code   RO        22339    .text._ZN4mbed14BufferedSerial13update_rx_irqEv  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/drivers/source/BufferedSerial.o
+    0x08004788   0x0000004c   Code   RO        22395    .text._ZN4mbed14BufferedSerial13update_tx_irqEv  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/drivers/source/BufferedSerial.o
+    0x080047d4   0x00000014   Code   RO        22409    .text._ZN4mbed14BufferedSerial14disable_rx_irqEv  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/drivers/source/BufferedSerial.o
+    0x080047e8   0x00000018   Code   RO        22411    .text._ZN4mbed14BufferedSerial14disable_tx_irqEv  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/drivers/source/BufferedSerial.o
+    0x08004800   0x00000032   Code   RO        22389    .text._ZN4mbed14BufferedSerial16write_unbufferedEPKcj  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/drivers/source/BufferedSerial.o
+    0x08004832   0x00000002   PAD
+    0x08004834   0x00000074   Code   RO        22399    .text._ZN4mbed14BufferedSerial4readEPvj  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/drivers/source/BufferedSerial.o
+    0x080048a8   0x00000008   Code   RO        22375    .text._ZN4mbed14BufferedSerial4seekEli  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/drivers/source/BufferedSerial.o
+    0x080048b0   0x0000002e   Code   RO        22379    .text._ZN4mbed14BufferedSerial4syncEv  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/drivers/source/BufferedSerial.o
+    0x080048de   0x00000004   Code   RO        22367    .text._ZN4mbed14BufferedSerial5closeEv  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/drivers/source/BufferedSerial.o
+    0x080048e2   0x00000036   Code   RO        22383    .text._ZN4mbed14BufferedSerial5sigioENS_8CallbackIFvvEEE  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/drivers/source/BufferedSerial.o
+    0x08004918   0x0000009c   Code   RO        22393    .text._ZN4mbed14BufferedSerial5writeEPKvj  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/drivers/source/BufferedSerial.o
+    0x080049b4   0x00000004   Code   RO        22371    .text._ZN4mbed14BufferedSerial6isattyEv  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/drivers/source/BufferedSerial.o
+    0x080049b8   0x0000005c   Code   RO        22407    .text._ZN4mbed14BufferedSerial6rx_irqEv  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/drivers/source/BufferedSerial.o
+    0x08004a14   0x00000064   Code   RO        22391    .text._ZN4mbed14BufferedSerial6tx_irqEv  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/drivers/source/BufferedSerial.o
+    0x08004a78   0x0000001c   Code   RO        22341    .text._ZN4mbed14BufferedSerialC2ERK15serial_pinmap_ti  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/drivers/source/BufferedSerial.o
+    0x08004a94   0x0000000e   Code   RO        22347    .text._ZN4mbed14BufferedSerialD0Ev  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/drivers/source/BufferedSerial.o
+    0x08004aa2   0x00000002   PAD
+    0x08004aa4   0x00000034   Code   RO        22343    .text._ZN4mbed14BufferedSerialD2Ev  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/drivers/source/BufferedSerial.o
+    0x08004ad8   0x00000042   Code   RO        22443    .text._ZN4mbed14CircularBufferIcLj256EjE3popERc  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/drivers/source/BufferedSerial.o
+    0x08004b1a   0x00000046   Code   RO        22441    .text._ZN4mbed14CircularBufferIcLj256EjE4pushERKc  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/drivers/source/BufferedSerial.o
+    0x08004b60   0x00000078   Code   RO        26348    .text._ZN4mbed16mbed_file_handleEi  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x08004bd8   0x0000000e   Code   RO        22569    .text._ZN4mbed3CAN12_irq_handlerEj10CanIrqType  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/drivers/source/CAN.o
+    0x08004be6   0x00000006   Code   RO        22601    .text._ZN4mbed3CAN4lockEv  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/drivers/source/CAN.o
+    0x08004bec   0x00000068   Code   RO        22579    .text._ZN4mbed3CAN6attachENS_8CallbackIFvvEEENS_9interface3can7IrqTypeE  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/drivers/source/CAN.o
+    0x08004c54   0x00000006   Code   RO        22603    .text._ZN4mbed3CAN6unlockEv  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/drivers/source/CAN.o
+    0x08004c5a   0x00000002   PAD
+    0x08004c5c   0x00000040   Code   RO        22571    .text._ZN4mbed3CANC2E7PinNameS1_i  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/drivers/source/CAN.o
+    0x08004c9c   0x0000000e   Code   RO        22581    .text._ZN4mbed3CAND0Ev  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/drivers/source/CAN.o
+    0x08004caa   0x00000002   PAD
+    0x08004cac   0x00000040   Code   RO        22577    .text._ZN4mbed3CAND2Ev  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/drivers/source/CAN.o
+    0x08004cec   0x00000010   Code   RO        22689    .text._ZN4mbed3I2C4lockEv  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/drivers/source/I2C.o
+    0x08004cfc   0x0000001a   Code   RO        22681    .text._ZN4mbed3I2C4readEiPcib  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/drivers/source/I2C.o
+    0x08004d16   0x0000001a   Code   RO        22677    .text._ZN4mbed3I2C5writeEiPKcib  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/drivers/source/I2C.o
+    0x08004d30   0x00000010   Code   RO        22691    .text._ZN4mbed3I2C6unlockEv  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/drivers/source/I2C.o
+    0x08004d40   0x000000dc   Code   RO        22671    .text._ZN4mbed3I2C7recoverE7PinNameS1_  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/drivers/source/I2C.o
+    0x08004e1c   0x00000020   Code   RO        22675    .text._ZN4mbed3I2C9frequencyEi  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/drivers/source/I2C.o
+    0x08004e3c   0x00000058   Code   RO        22669    .text._ZN4mbed3I2CC2E7PinNameS1_  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/drivers/source/I2C.o
+    0x08004e94   0x0000000e   Code   RO        22725    .text._ZN4mbed3I2CD0Ev  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/drivers/source/I2C.o
+    0x08004ea2   0x00000002   PAD
+    0x08004ea4   0x0000001c   Code   RO         1984    .text._ZN4mbed3I2CD2Ev  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/connectivity/drivers/802.15.4_RF/atmel-rf-driver/source/NanostackRfPhyAtmel.o
+    0x08004ec0   0x00000004   Code   RO           35    .text._ZN4mbed8CallbackIFvvEE11target_callIPS1_EEvPKNS_6detail12CallbackBaseE  BUILD/NUCLEO_F446RE/ARMC6/main.o
+    0x08004ec4   0x00000004   Code   RO        22459    .text._ZN4mbed8CallbackIFvvEE11target_callIZNS2_C1IPNS_14BufferedSerialEMS5_FvvELi0EEET_T0_EUlvE_EEvPKNS_6detail12CallbackBaseE  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/drivers/source/BufferedSerial.o
+    0x08004ec8   0x0000007c   Code   RO        25704    .text._ZN4mbed8FileBase6lookupEPKcj  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/platform/source/FileBase.o
+    0x08004f44   0x00000018   Code   RO        25735    .text._ZN4mbed8FilePath10fileSystemEv  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/platform/source/FilePath.o
+    0x08004f5c   0x00000018   Code   RO        25733    .text._ZN4mbed8FilePath12isFileSystemEv  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/platform/source/FilePath.o
+    0x08004f74   0x00000018   Code   RO        25739    .text._ZN4mbed8FilePath4fileEv  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/platform/source/FilePath.o
+    0x08004f8c   0x0000000a   Code   RO        25741    .text._ZN4mbed8FilePath6existsEv  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/platform/source/FilePath.o
+    0x08004f96   0x00000016   Code   RO        25737    .text._ZN4mbed8FilePath6isFileEv  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/platform/source/FilePath.o
+    0x08004fac   0x0000003c   Code   RO        25729    .text._ZN4mbed8FilePathC2EPKc  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/platform/source/FilePath.o
+    0x08004fe8   0x00000012   Code   RO        22465    .text._ZN4mstd4impl6INVOKEIN4mbed14BufferedSerialEFvvERKPS3_JEEENSt3__29enable_ifIXaaaasr3std11is_functionIT0_EE5valuentsr3std10is_base_ofIT_NS8_5decayIT1_E4typeEEE5valuentsr20is_reference_wrapperISF_EE5valueEDTcldsdeclsr3stdE7forwardISD_Efp0_Efp_spclsr3stdE7forwardIT2_Efp1_EEEE4typeEMSB_SA_OSD_DpOSG_  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/drivers/source/BufferedSerial.o
+    0x08004ffa   0x0000000c   Code   RO        22463    .text._ZN4mstd6invokeIRKMN4mbed14BufferedSerialEFvvEJRKPS2_EEENS_13invoke_resultIT_JDpT0_EE4typeEOSB_DpOSC_  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/drivers/source/BufferedSerial.o
+    0x08005006   0x00000008   Code   RO        26919    .text._ZN4rtos10ThisThread9sleep_forENSt3__26chrono8durationIjNS1_5ratioILx1ELx1000EEEEE  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/rtos/source/ThisThread.o
+    0x0800500e   0x00000002   PAD
+    0x08005010   0x00000044   Code   RO        26835    .text._ZN4rtos5Mutex11constructorEPKc  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/rtos/source/Mutex.o
+    0x08005054   0x00000030   Code   RO        26839    .text._ZN4rtos5Mutex4lockEv  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/rtos/source/Mutex.o
+    0x08005084   0x0000002c   Code   RO        26851    .text._ZN4rtos5Mutex6unlockEv  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/rtos/source/Mutex.o
+    0x080050b0   0x0000000e   Code   RO        26833    .text._ZN4rtos5MutexC2Ev  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/rtos/source/Mutex.o
+    0x080050be   0x0000000e   Code   RO        26855    .text._ZN4rtos5MutexD2Ev  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/rtos/source/Mutex.o
+    0x080050cc   0x00000016   Code   RO        26937    .text._ZN4rtos6Thread11constructorE12osPriority_tjPhPKc  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/rtos/source/Thread.o
+    0x080050e2   0x00000002   PAD
+    0x080050e4   0x0000007c   Code   RO        26935    .text._ZN4rtos6Thread11constructorEj12osPriority_tjPhPKc  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/rtos/source/Thread.o
+    0x08005160   0x000000c4   Code   RO        26939    .text._ZN4rtos6Thread5startEN4mbed8CallbackIFvvEEE  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/rtos/source/Thread.o
+    0x08005224   0x00000028   Code   RO        26941    .text._ZN4rtos6Thread6_thunkEPv  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/rtos/source/Thread.o
+    0x0800524c   0x00000036   Code   RO        26943    .text._ZN4rtos6Thread9terminateEv  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/rtos/source/Thread.o
+    0x08005282   0x00000002   PAD
+    0x08005284   0x0000003c   Code   RO           27    .text._ZN4rtos6ThreadC2E12osPriority_tjPhPKc  BUILD/NUCLEO_F446RE/ARMC6/main.o
+    0x080052c0   0x0000000e   Code   RO        26969    .text._ZN4rtos6ThreadD0Ev  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/rtos/source/Thread.o
+    0x080052ce   0x00000002   PAD
+    0x080052d0   0x0000003c   Code   RO        26967    .text._ZN4rtos6ThreadD2Ev  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/rtos/source/Thread.o
+    0x0800530c   0x00000020   Code   RO        26863    .text._ZN4rtos9Semaphore11constructorEit  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/rtos/source/Semaphore.o
+    0x0800532c   0x00000006   Code   RO        26879    .text._ZN4rtos9Semaphore7releaseEv  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/rtos/source/Semaphore.o
+    0x08005332   0x00000010   Code   RO        26861    .text._ZN4rtos9SemaphoreC2Ei  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/rtos/source/Semaphore.o
+    0x08005342   0x0000000e   Code   RO        26881    .text._ZN4rtos9SemaphoreD2Ev  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/rtos/source/Semaphore.o
+    0x08005350   0x00000028   Code   RO        23095    .text._ZN6CThunkIN4mbed10SerialBaseEE10trampolineEP10CThunkBase  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/drivers/source/SerialBase.o
+    0x08005378   0x00000014   Code   RO        23091    .text._ZN6CThunkIN4mbed10SerialBaseEED2Ev  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/drivers/source/SerialBase.o
+    0x0800538c   0x00000028   Code   RO        22727    .text._ZN6CThunkIN4mbed3I2CEE10trampolineEP10CThunkBase  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/drivers/source/I2C.o
+    0x080053b4   0x00000014   Code   RO         1986    .text._ZN6CThunkIN4mbed3I2CEED2Ev  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/connectivity/drivers/802.15.4_RF/atmel-rf-driver/source/NanostackRfPhyAtmel.o
+    0x080053c8   0x00000022   Code   RO        21627    .text._ZNK12SingletonPtrIN4rtos5MutexEE3getEv  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/connectivity/netsocket/source/nsapi_dns.o
+    0x080053ea   0x00000006   Code   RO        22447    .text._ZNK4mbed14BufferedSerial11is_blockingEv  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/drivers/source/BufferedSerial.o
+    0x080053f0   0x00000018   Code   RO        22403    .text._ZNK4mbed14BufferedSerial3hupEv  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/drivers/source/BufferedSerial.o
+    0x08005408   0x0000002a   Code   RO        22385    .text._ZNK4mbed14BufferedSerial4pollEs  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/drivers/source/BufferedSerial.o
+    0x08005432   0x00000024   Code   RO        22439    .text._ZNK4mbed14CircularBufferIcLj256EjE5emptyEv  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/drivers/source/BufferedSerial.o
+    0x08005456   0x0000000c   Code   RO        22415    .text._ZThn228_N4mbed14BufferedSerial12enable_inputEb  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/drivers/source/BufferedSerial.o
+    0x08005462   0x00000008   Code   RO        22455    .text._ZThn228_N4mbed14BufferedSerial12set_blockingEb  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/drivers/source/BufferedSerial.o
+    0x0800546a   0x0000000c   Code   RO        22419    .text._ZThn228_N4mbed14BufferedSerial13enable_outputEb  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/drivers/source/BufferedSerial.o
+    0x08005476   0x00000006   Code   RO        22401    .text._ZThn228_N4mbed14BufferedSerial4readEPvj  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/drivers/source/BufferedSerial.o
+    0x0800547c   0x00000008   Code   RO        22377    .text._ZThn228_N4mbed14BufferedSerial4seekEli  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/drivers/source/BufferedSerial.o
+    0x08005484   0x0000000c   Code   RO        22381    .text._ZThn228_N4mbed14BufferedSerial4syncEv  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/drivers/source/BufferedSerial.o
+    0x08005490   0x00000004   Code   RO        22369    .text._ZThn228_N4mbed14BufferedSerial5closeEv  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/drivers/source/BufferedSerial.o
+    0x08005494   0x0000000e   Code   RO        22387    .text._ZThn228_N4mbed14BufferedSerial5sigioENS_8CallbackIFvvEEE  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/drivers/source/BufferedSerial.o
+    0x080054a2   0x00000006   Code   RO        22397    .text._ZThn228_N4mbed14BufferedSerial5writeEPKvj  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/drivers/source/BufferedSerial.o
+    0x080054a8   0x00000004   Code   RO        22373    .text._ZThn228_N4mbed14BufferedSerial6isattyEv  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/drivers/source/BufferedSerial.o
+    0x080054ac   0x00000006   Code   RO        22349    .text._ZThn228_N4mbed14BufferedSerialD0Ev  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/drivers/source/BufferedSerial.o
+    0x080054b2   0x00000006   Code   RO        22345    .text._ZThn228_N4mbed14BufferedSerialD1Ev  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/drivers/source/BufferedSerial.o
+    0x080054b8   0x00000006   Code   RO        22457    .text._ZThn228_NK4mbed14BufferedSerial11is_blockingEv  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/drivers/source/BufferedSerial.o
+    0x080054be   0x00000008   Code   RO        22405    .text._ZThn228_NK4mbed14BufferedSerial4pollEs  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/drivers/source/BufferedSerial.o
+    0x080054c6   0x00000008   Code   RO        22461    .text._ZZN4mbed8CallbackIFvvEEC1IPNS_14BufferedSerialEMS4_FvvELi0EEET_T0_ENKUlvE_clEv  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/drivers/source/BufferedSerial.o
+    0x080054ce   0x00000004   Code   RO        26486    .text._ZdaPv        BUILD/NUCLEO_F446RE/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x080054d2   0x00000004   Code   RO        26426    .text._ZdlPv        BUILD/NUCLEO_F446RE/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x080054d6   0x00000004   Code   RO        26482    .text._ZnajRKSt9nothrow_t  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x080054da   0x00000002   PAD
+    0x080054dc   0x0000001c   Code   RO        33483    .text.__NVIC_EnableIRQ  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/i2c_api.o
+    0x080054f8   0x00000024   Code   RO        33481    .text.__NVIC_SetPriority  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/i2c_api.o
+    0x0800551c   0x0000002e   Code   RO        26468    .text.__cxa_guard_acquire  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x0800554a   0x0000000e   Code   RO        26474    .text.__cxa_guard_release  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x08005558   0x00000038   Code   RO          659    .text.__rt_entry    BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/device/rtos/TOOLCHAIN_ARM_STD/mbed_boot_arm_std.o
+    0x08005590   0x0000004c   Code   RO          663    .text.__user_perthread_libspace  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/device/rtos/TOOLCHAIN_ARM_STD/mbed_boot_arm_std.o
+    0x080055dc   0x00000004   Code   RO        26404    .text.__user_setup_stackheap  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x080055e0   0x000000dc   Code   RO        33366    .text._can_init_freq_direct  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/can_api.o
+    0x080056bc   0x00000026   Code   RO        25317    .text._gpio_init_in  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/hal/source/mbed_gpio.o
+    0x080056e2   0x00000030   Code   RO        25323    .text._gpio_init_out  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/hal/source/mbed_gpio.o
+    0x08005712   0x00000002   PAD
+    0x08005714   0x0000002c   Code   RO        26400    .text._mbed_user_setup_stackheap  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x08005740   0x0000001a   Code   RO          669    .text._mutex_acquire  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/device/rtos/TOOLCHAIN_ARM_STD/mbed_boot_arm_std.o
+    0x0800575a   0x00000002   PAD
+    0x0800575c   0x00000044   Code   RO          673    .text._mutex_free   BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/device/rtos/TOOLCHAIN_ARM_STD/mbed_boot_arm_std.o
+    0x080057a0   0x0000009c   Code   RO          667    .text._mutex_initialize  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/device/rtos/TOOLCHAIN_ARM_STD/mbed_boot_arm_std.o
+    0x0800583c   0x00000016   Code   RO          671    .text._mutex_release  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/device/rtos/TOOLCHAIN_ARM_STD/mbed_boot_arm_std.o
+    0x08005852   0x00000004   Code   RO          239    .text._platform_post_stackheap_init  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_lib.o
+    0x08005856   0x00000004   Code   RO        26368    .text._sys_close    BUILD/NUCLEO_F446RE/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x0800585a   0x00000002   Code   RO        26378    .text._sys_exit     BUILD/NUCLEO_F446RE/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x0800585c   0x00000026   Code   RO        26398    .text._sys_flen     BUILD/NUCLEO_F446RE/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x08005882   0x00000004   Code   RO        26386    .text._sys_istty    BUILD/NUCLEO_F446RE/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x08005886   0x00000002   PAD
+    0x08005888   0x00000084   Code   RO        26362    .text._sys_open     BUILD/NUCLEO_F446RE/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x0800590c   0x00000006   Code   RO        26388    .text._sys_seek     BUILD/NUCLEO_F446RE/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x08005912   0x00000002   PAD
+    0x08005914   0x000000c0   Code   RO        26372    .text._sys_write    BUILD/NUCLEO_F446RE/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x080059d4   0x00000014   Code   RO        26380    .text._ttywrch      BUILD/NUCLEO_F446RE/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x080059e8   0x00000014   Code   RO        26587    .text._wait_us_ticks  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/platform/source/mbed_wait_api_no_rtos.o
+    0x080059fc   0x00000002   Code   RO        25470    .text.block_us_ticker_free  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/hal/source/mbed_us_ticker_api.o
+    0x080059fe   0x00000058   Code   RO        33396    .text.can_filter    BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/can_api.o
+    0x08005a56   0x00000002   PAD
+    0x08005a58   0x00000040   Code   RO        33376    .text.can_free      BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/can_api.o
+    0x08005a98   0x00000134   Code   RO        33378    .text.can_frequency  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/can_api.o
+    0x08005bcc   0x0000006c   Code   RO        33368    .text.can_init_freq  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/can_api.o
+    0x08005c38   0x000000f8   Code   RO        33400    .text.can_irq       BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/can_api.o
+    0x08005d30   0x00000020   Code   RO        33374    .text.can_irq_free  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/can_api.o
+    0x08005d50   0x00000018   Code   RO        33372    .text.can_irq_init  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/can_api.o
+    0x08005d68   0x000000d4   Code   RO        33412    .text.can_irq_set   BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/can_api.o
+    0x08005e3c   0x0000005c   Code   RO        33386    .text.can_registers_init  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/can_api.o
+    0x08005e98   0x00000038   Code   RO        26370    .text.close         BUILD/NUCLEO_F446RE/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x08005ed0   0x0000000c   Code   RO        26167    .text.core_util_are_interrupts_enabled  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/platform/source/mbed_critical.o
+    0x08005edc   0x00000012   Code   RO        26070    .text.core_util_atomic_decr_u16  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/platform/source/mbed_atomic_impl.o
+    0x08005eee   0x00000010   Code   RO        26056    .text.core_util_atomic_exchange_u8  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/platform/source/mbed_atomic_impl.o
+    0x08005efe   0x00000014   Code   RO        26054    .text.core_util_atomic_flag_test_and_set  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/platform/source/mbed_atomic_impl.o
+    0x08005f12   0x00000012   Code   RO        26064    .text.core_util_atomic_incr_u16  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/platform/source/mbed_atomic_impl.o
+    0x08005f24   0x00000010   Code   RO        26173    .text.core_util_critical_section_enter  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/platform/source/mbed_critical.o
+    0x08005f34   0x00000018   Code   RO        26175    .text.core_util_critical_section_exit  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/platform/source/mbed_critical.o
+    0x08005f4c   0x00000004   Code   RO        26171    .text.core_util_in_critical_section  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/platform/source/mbed_critical.o
+    0x08005f50   0x0000000c   Code   RO        26169    .text.core_util_is_isr_active  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/platform/source/mbed_critical.o
+    0x08005f5c   0x00000024   Code   RO        26180    .text.error         BUILD/NUCLEO_F446RE/ARMC6/mbed-os/platform/source/mbed_error.o
+    0x08005f80   0x0000002c   Code   RO        26444    .text.exit          BUILD/NUCLEO_F446RE/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x08005fac   0x00000028   Code   RO        26396    .text.fsync         BUILD/NUCLEO_F446RE/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x08005fd4   0x00000058   Code   RO        33734    .text.get_uart_index  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/serial_api.o
+    0x0800602c   0x0000002a   Code   RO        33432    .text.gpio_dir      BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/gpio_api.o
+    0x08006056   0x00000002   PAD
+    0x08006058   0x00000044   Code   RO        33428    .text.gpio_init     BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/gpio_api.o
+    0x0800609c   0x00000036   Code   RO        25325    .text.gpio_init_inout  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/hal/source/mbed_gpio.o
+    0x080060d2   0x00000006   Code   RO        25319    .text.gpio_init_out  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/hal/source/mbed_gpio.o
+    0x080060d8   0x00000008   Code   RO        25321    .text.gpio_init_out_ex  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/hal/source/mbed_gpio.o
+    0x080060e0   0x00000008   Code   RO        33430    .text.gpio_mode     BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/gpio_api.o
+    0x080060e8   0x00000018   Code   RO        33426    .text.gpio_set      BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/gpio_api.o
+    0x08006100   0x00000014   Code   RO        25311    .text.gpio_write    BUILD/NUCLEO_F446RE/ARMC6/mbed-os/hal/source/mbed_gpio.o
+    0x08006114   0x00000018   Code   RO        25298    .text.hal_critical_section_enter  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/hal/source/mbed_critical_section_api.o
+    0x0800612c   0x00000010   Code   RO        25300    .text.hal_critical_section_exit  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/hal/source/mbed_critical_section_api.o
+    0x0800613c   0x00000114   Code   RO        33746    .text.hal_deepsleep  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/sleep.o
+    0x08006250   0x0000000c   Code   RO        25302    .text.hal_in_critical_section  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/hal/source/mbed_critical_section_api.o
+    0x0800625c   0x00000020   Code   RO        33744    .text.hal_sleep     BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/sleep.o
+    0x0800627c   0x00000094   Code   RO        26182    .text.handle_error  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/platform/source/mbed_error.o
+    0x08006310   0x00000014   Code   RO        33489    .text.i2c1_irq      BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/i2c_api.o
+    0x08006324   0x00000014   Code   RO        33491    .text.i2c2_irq      BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/i2c_api.o
+    0x08006338   0x00000014   Code   RO        33493    .text.i2c3_irq      BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/i2c_api.o
+    0x0800634c   0x00000014   Code   RO        33495    .text.i2c5_irq      BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/i2c_api.o
+    0x08006360   0x00000018   Code   RO        33485    .text.i2c_ev_err_disable  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/i2c_api.o
+    0x08006378   0x0000004c   Code   RO        33479    .text.i2c_ev_err_enable  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/i2c_api.o
+    0x080063c4   0x00000050   Code   RO        33503    .text.i2c_frequency  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/i2c_api.o
+    0x08006414   0x00000044   Code   RO        33487    .text.i2c_get_irq_handler  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/i2c_api.o
+    0x08006458   0x00000064   Code   RO        33497    .text.i2c_hw_reset  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/i2c_api.o
+    0x080064bc   0x00000068   Code   RO        33507    .text.i2c_init      BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/i2c_api.o
+    0x08006524   0x00000120   Code   RO        33501    .text.i2c_init_internal  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/i2c_api.o
+    0x08006644   0x00000074   Code   RO        33523    .text.i2c_read      BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/i2c_api.o
+    0x080066b8   0x00000026   Code   RO        33533    .text.i2c_slave_address  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/i2c_api.o
+    0x080066de   0x00000002   PAD
+    0x080066e0   0x00000078   Code   RO        33525    .text.i2c_write     BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/i2c_api.o
+    0x08006758   0x000000ac   Code   RO        33834    .text.init_32bit_timer  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/us_ticker.o
+    0x08006804   0x00000060   Code   RO        33714    .text.init_uart     BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/serial_api.o
+    0x08006864   0x00000028   Code   RO        26356    .text.isatty        BUILD/NUCLEO_F446RE/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x0800688c   0x0000002a   Code   RO        26390    .text.lseek         BUILD/NUCLEO_F446RE/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x080068b6   0x00000002   PAD
+    0x080068b8   0x00000084   Code   RO            8    .text.main          BUILD/NUCLEO_F446RE/ARMC6/main.o
+    0x0800693c   0x00000064   Code   RO        26156    .text.mbed_die      BUILD/NUCLEO_F446RE/ARMC6/mbed-os/platform/source/mbed_board.o
+    0x080069a0   0x00000020   Code   RO        26202    .text.mbed_error    BUILD/NUCLEO_F446RE/ARMC6/mbed-os/platform/source/mbed_error.o
+    0x080069c0   0x00000018   Code   RO        26158    .text.mbed_error_printf  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/platform/source/mbed_board.o
+    0x080069d8   0x0000004c   Code   RO        26162    .text.mbed_error_puts  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/platform/source/mbed_board.o
+    0x08006a24   0x00000034   Code   RO        26160    .text.mbed_error_vprintf  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/platform/source/mbed_board.o
+    0x08006a58   0x000000f4   Code   RO        26032    .text.mbed_fault_handler  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/platform/source/TARGET_CORTEX_M/mbed_fault_handler.o
+    0x08006b4c   0x0000000c   Code   RO        26198    .text.mbed_get_error_in_progress  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/platform/source/mbed_error.o
+    0x08006b58   0x00000030   Code   RO        26184    .text.mbed_halt_system  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/platform/source/mbed_error.o
+    0x08006b88   0x0000003c   Code   RO          681    .text.mbed_init     BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/device/rtos/source/mbed_boot.o
+    0x08006bc4   0x000002a6   Code   RO        26728    .text.mbed_minimal_formatted_string  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/platform/source/minimal-printf/mbed_printf_implementation.o
+    0x08006e6a   0x00000002   PAD
+    0x08006e6c   0x0000012c   Code   RO        26732    .text.mbed_minimal_formatted_string_integer  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/platform/source/minimal-printf/mbed_printf_implementation.o
+    0x08006f98   0x0000003c   Code   RO        26734    .text.mbed_minimal_putchar  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/platform/source/minimal-printf/mbed_printf_implementation.o
+    0x08006fd4   0x0000005c   Code   RO        25478    .text.mbed_mpu_init  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/hal/source/mpu/mbed_mpu_v7m.o
+    0x08007030   0x00000004   Code   RO          697    .text.mbed_rtos_init  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/device/rtos/source/mbed_rtos_rtx.o
+    0x08007034   0x00000024   Code   RO          701    .text.mbed_rtos_init_singleton_mutex  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/device/rtos/source/mbed_rtos_rtx.o
+    0x08007058   0x00000068   Code   RO          699    .text.mbed_rtos_start  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/device/rtos/source/mbed_rtos_rtx.o
+    0x080070c0   0x00000038   Code   RO        33613    .text.mbed_sdk_init  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/mbed_overrides.o
+    0x080070f8   0x0000001e   Code   RO          685    .text.mbed_start    BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/device/rtos/source/mbed_boot.o
+    0x08007116   0x00000002   PAD
+    0x08007118   0x00000018   Code   RO          661    .text.mbed_toolchain_init  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/device/rtos/TOOLCHAIN_ARM_STD/mbed_boot_arm_std.o
+    0x08007130   0x00000084   Code   RO        26364    .text.open          BUILD/NUCLEO_F446RE/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x080071b4   0x00000030   Code   RO           91    .text.osDelay       BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_delay.o
+    0x080071e4   0x00000030   Code   RO          179    .text.osKernelGetState  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_kernel.o
+    0x08007214   0x0000002c   Code   RO          173    .text.osKernelInitialize  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_kernel.o
+    0x08007240   0x00000028   Code   RO          183    .text.osKernelStart  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_kernel.o
+    0x08007268   0x00000070   Code   RO          322    .text.osMessageQueueGet  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_msgqueue.o
+    0x080072d8   0x0000007c   Code   RO          320    .text.osMessageQueuePut  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_msgqueue.o
+    0x08007354   0x0000002c   Code   RO          376    .text.osMutexAcquire  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_mutex.o
+    0x08007380   0x0000002c   Code   RO          382    .text.osMutexDelete  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_mutex.o
+    0x080073ac   0x00000034   Code   RO          372    .text.osMutexNew    BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_mutex.o
+    0x080073e0   0x0000002c   Code   RO          378    .text.osMutexRelease  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_mutex.o
+    0x0800740c   0x00000050   Code   RO          716    .text.osRtxErrorNotify  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/device/rtos/source/mbed_rtx_handlers.o
+    0x0800745c   0x00000004   Code   RO          714    .text.osRtxIdleThread  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/device/rtos/source/mbed_rtx_handlers.o
+    0x08007460   0x00000016   Code   RO          171    .text.osRtxKernelErrorNotify  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_kernel.o
+    0x08007476   0x0000006c   Code   RO          258    .text.osRtxMemoryAlloc  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_memory.o
+    0x080074e2   0x00000042   Code   RO          260    .text.osRtxMemoryFree  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_memory.o
+    0x08007524   0x00000036   Code   RO          256    .text.osRtxMemoryInit  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_memory.o
+    0x0800755a   0x0000003a   Code   RO          266    .text.osRtxMemoryPoolAlloc  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_mempool.o
+    0x08007594   0x0000004a   Code   RO          268    .text.osRtxMemoryPoolFree  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_mempool.o
+    0x080075de   0x00000038   Code   RO          264    .text.osRtxMemoryPoolInit  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_mempool.o
+    0x08007616   0x000000aa   Code   RO          344    .text.osRtxMessageQueuePostProcess  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_msgqueue.o
+    0x080076c0   0x00000024   Code   RO          312    .text.osRtxMessageQueueTimerSetup  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_msgqueue.o
+    0x080076e4   0x00000048   Code   RO          368    .text.osRtxMutexOwnerRelease  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_mutex.o
+    0x0800772c   0x00000048   Code   RO          370    .text.osRtxMutexOwnerRestore  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_mutex.o
+    0x08007774   0x00000088   Code   RO          440    .text.osRtxPendSV_Handler  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_system.o
+    0x080077fc   0x00000070   Code   RO          442    .text.osRtxPostProcess  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_system.o
+    0x0800786c   0x00000036   Code   RO          420    .text.osRtxSemaphorePostProcess  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_semaphore.o
+    0x080078a2   0x00000002   PAD
+    0x080078a4   0x00000034   Code   RO          466    .text.osRtxThreadBlock  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_thread.o
+    0x080078d8   0x0000007c   Code   RO          474    .text.osRtxThreadDelayInsert  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_thread.o
+    0x08007954   0x0000003c   Code   RO          470    .text.osRtxThreadDelayRemove  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_thread.o
+    0x08007990   0x00000048   Code   RO          456    .text.osRtxThreadDelayTick  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_thread.o
+    0x080079d8   0x00000020   Code   RO          558    .text.osRtxThreadDestroy  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_thread.o
+    0x080079f8   0x00000050   Code   RO          464    .text.osRtxThreadDispatch  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_thread.o
+    0x08007a48   0x00000058   Code   RO          550    .text.osRtxThreadFree  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_thread.o
+    0x08007aa0   0x0000001e   Code   RO          556    .text.osRtxThreadJoinWakeup  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_thread.o
+    0x08007abe   0x00000012   Code   RO          448    .text.osRtxThreadListGet  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_thread.o
+    0x08007ad0   0x0000002c   Code   RO          446    .text.osRtxThreadListPut  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_thread.o
+    0x08007afc   0x00000014   Code   RO          452    .text.osRtxThreadListRemove  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_thread.o
+    0x08007b10   0x0000000c   Code   RO          458    .text.osRtxThreadListRoot  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_thread.o
+    0x08007b1c   0x00000026   Code   RO          450    .text.osRtxThreadListSort  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_thread.o
+    0x08007b42   0x00000020   Code   RO          524    .text.osRtxThreadPostProcess  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_thread.o
+    0x08007b62   0x00000002   PAD
+    0x08007b64   0x00000010   Code   RO          454    .text.osRtxThreadReadyPut  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_thread.o
+    0x08007b74   0x00000014   Code   RO          460    .text.osRtxThreadRegPtr  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_thread.o
+    0x08007b88   0x00000038   Code   RO          476    .text.osRtxThreadStartup  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_thread.o
+    0x08007bc0   0x00000010   Code   RO          462    .text.osRtxThreadSwitch  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_thread.o
+    0x08007bd0   0x0000003c   Code   RO          472    .text.osRtxThreadWaitEnter  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_thread.o
+    0x08007c0c   0x00000030   Code   RO          468    .text.osRtxThreadWaitExit  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_thread.o
+    0x08007c3c   0x00000078   Code   RO          438    .text.osRtxTick_Handler  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_system.o
+    0x08007cb4   0x00000020   Code   RO          598    .text.osRtxTimerSetup  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_timer.o
+    0x08007cd4   0x00000020   Code   RO          602    .text.osRtxTimerThread  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_timer.o
+    0x08007cf4   0x00000070   Code   RO          600    .text.osRtxTimerTick  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_timer.o
+    0x08007d64   0x00000030   Code   RO          416    .text.osSemaphoreDelete  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_semaphore.o
+    0x08007d94   0x00000034   Code   RO          404    .text.osSemaphoreNew  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_semaphore.o
+    0x08007dc8   0x00000050   Code   RO          410    .text.osSemaphoreRelease  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_semaphore.o
+    0x08007e18   0x0000001c   Code   RO          508    .text.osThreadExit  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_thread.o
+    0x08007e34   0x00000028   Code   RO          484    .text.osThreadGetId  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_thread.o
+    0x08007e5c   0x00000034   Code   RO          480    .text.osThreadNew   BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_thread.o
+    0x08007e90   0x00000034   Code   RO          510    .text.osThreadTerminate  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_thread.o
+    0x08007ec4   0x00000020   Code   RO          665    .text.os_kernel_is_active  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/device/rtos/TOOLCHAIN_ARM_STD/mbed_boot_arm_std.o
+    0x08007ee4   0x00000024   Code   RO        26730    .text.parse_string_to_integer  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/platform/source/minimal-printf/mbed_printf_implementation.o
+    0x08007f08   0x000000e0   Code   RO        33619    .text.pin_function  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/pinmap.o
+    0x08007fe8   0x00000078   Code   RO        33623    .text.pin_mode      BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/pinmap.o
+    0x08008060   0x00000022   Code   RO        25387    .text.pinmap_find_function  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/hal/source/mbed_pinmap_common.o
+    0x08008082   0x00000022   Code   RO        25383    .text.pinmap_find_peripheral  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/hal/source/mbed_pinmap_common.o
+    0x080080a4   0x00000024   Code   RO        25381    .text.pinmap_merge  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/hal/source/mbed_pinmap_common.o
+    0x080080c8   0x00000024   Code   RO        25385    .text.pinmap_peripheral  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/hal/source/mbed_pinmap_common.o
+    0x080080ec   0x00000044   Code   RO        25379    .text.pinmap_pinout  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/hal/source/mbed_pinmap_common.o
+    0x08008130   0x0000015c   Code   RO        26034    .text.print_context_info  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/platform/source/TARGET_CORTEX_M/mbed_fault_handler.o
+    0x0800828c   0x00000014   Code   RO        33850    .text.restore_timer_ctx  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/us_ticker.o
+    0x080082a0   0x0000000c   Code   RO          729    .text.rtos_idle_loop  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/device/rtos/source/mbed_rtx_idle.o
+    0x080082ac   0x0000001c   Code   RO        33848    .text.save_timer_ctx  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/us_ticker.o
+    0x080082c8   0x000000ca   Code   RO        25432    .text.schedule_interrupt  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/hal/source/mbed_ticker_api.o
+    0x08008392   0x00000006   Code   RO        33712    .text.serial_baud   BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/serial_api.o
+    0x08008398   0x00000114   Code   RO        33710    .text.serial_free   BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/serial_api.o
+    0x080084ac   0x0000003c   Code   RO        33301    .text.serial_getc   BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/serial_device.o
+    0x080084e8   0x000001d4   Code   RO        33708    .text.serial_init   BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/serial_api.o
+    0x080086bc   0x0000000e   Code   RO        25501    .text.serial_init_direct  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/hal/source/static_pinmap.o
+    0x080086ca   0x00000002   PAD
+    0x080086cc   0x00000014   Code   RO        33285    .text.serial_irq_handler  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/serial_device.o
+    0x080086e0   0x000000f0   Code   RO        33287    .text.serial_irq_set  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/serial_device.o
+    0x080087d0   0x00000088   Code   RO        33736    .text.serial_is_tx_ongoing  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/serial_api.o
+    0x08008858   0x00000028   Code   RO        33303    .text.serial_putc   BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/serial_device.o
+    0x08008880   0x0000002c   Code   RO        33726    .text.serial_readable  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/serial_api.o
+    0x080088ac   0x00000018   Code   RO        33728    .text.serial_writable  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/serial_api.o
+    0x080088c4   0x00000024   Code   RO        26313    .text.sleep_manager_lock_deep_sleep_internal  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/platform/source/mbed_power_mgmt.o
+    0x080088e8   0x00000020   Code   RO        26321    .text.sleep_manager_sleep_auto  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/platform/source/mbed_power_mgmt.o
+    0x08008908   0x00000030   Code   RO        26315    .text.sleep_manager_unlock_deep_sleep_internal  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/platform/source/mbed_power_mgmt.o
+    0x08008938   0x0000003a   Code   RO        33621    .text.stm_pin_PullConfig  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/pinmap.o
+    0x08008972   0x00000026   Code   RO           95    .text.svcRtxDelay   BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_delay.o
+    0x08008998   0x00000008   Code   RO          181    .text.svcRtxKernelGetState  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_kernel.o
+    0x080089a0   0x000000f8   Code   RO          211    .text.svcRtxKernelInitialize  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_kernel.o
+    0x08008a98   0x00000098   Code   RO          213    .text.svcRtxKernelStart  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_kernel.o
+    0x08008b30   0x000000d0   Code   RO          356    .text.svcRtxMessageQueueGet  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_msgqueue.o
+    0x08008c00   0x00000134   Code   RO          314    .text.svcRtxMessageQueueNew  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_msgqueue.o
+    0x08008d34   0x000000bc   Code   RO          352    .text.svcRtxMessageQueuePut  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_msgqueue.o
+    0x08008df0   0x000000a0   Code   RO          388    .text.svcRtxMutexAcquire  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_mutex.o
+    0x08008e90   0x000000ac   Code   RO          394    .text.svcRtxMutexDelete  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_mutex.o
+    0x08008f3c   0x00000078   Code   RO          384    .text.svcRtxMutexNew  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_mutex.o
+    0x08008fb4   0x000000c4   Code   RO          390    .text.svcRtxMutexRelease  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_mutex.o
+    0x08009078   0x00000060   Code   RO          430    .text.svcRtxSemaphoreDelete  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_semaphore.o
+    0x080090d8   0x00000098   Code   RO          418    .text.svcRtxSemaphoreNew  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_semaphore.o
+    0x08009170   0x00000040   Code   RO          428    .text.svcRtxSemaphoreRelease  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_semaphore.o
+    0x080091b0   0x00000048   Code   RO          554    .text.svcRtxThreadExit  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_thread.o
+    0x080091f8   0x0000000c   Code   RO          486    .text.svcRtxThreadGetId  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_thread.o
+    0x08009204   0x0000020c   Code   RO          478    .text.svcRtxThreadNew  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_thread.o
+    0x08009410   0x00000094   Code   RO          560    .text.svcRtxThreadTerminate  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_thread.o
+    0x080094a4   0x00000004   Code   RO        26577    .text.thread_sleep_for  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/platform/source/mbed_thread.o
+    0x080094a8   0x0000005e   Code   RO        25428    .text.ticker_irq_handler  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/hal/source/mbed_ticker_api.o
+    0x08009506   0x00000002   PAD
+    0x08009508   0x00000024   Code   RO        33832    .text.timer_irq_handler  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/us_ticker.o
+    0x0800952c   0x0000000c   Code   RO        33289    .text.uart1_irq     BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/serial_device.o
+    0x08009538   0x0000000c   Code   RO        33291    .text.uart2_irq     BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/serial_device.o
+    0x08009544   0x0000000c   Code   RO        33293    .text.uart3_irq     BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/serial_device.o
+    0x08009550   0x0000000c   Code   RO        33295    .text.uart4_irq     BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/serial_device.o
+    0x0800955c   0x0000000c   Code   RO        33297    .text.uart5_irq     BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/serial_device.o
+    0x08009568   0x0000000c   Code   RO        33299    .text.uart6_irq     BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/serial_device.o
+    0x08009574   0x00000068   Code   RO        33329    .text.uart_irq      BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/serial_device.o
+    0x080095dc   0x0000007c   Code   RO        25430    .text.update_present_time  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/hal/source/mbed_ticker_api.o
+    0x08009658   0x0000000c   Code   RO        33846    .text.us_ticker_clear_interrupt  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/us_ticker.o
+    0x08009664   0x00000010   Code   RO        33844    .text.us_ticker_disable_interrupt  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/us_ticker.o
+    0x08009674   0x0000001c   Code   RO        33842    .text.us_ticker_fire_interrupt  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/us_ticker.o
+    0x08009690   0x00000008   Code   RO        33830    .text.us_ticker_get_info  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/us_ticker.o
+    0x08009698   0x00000014   Code   RO        33836    .text.us_ticker_init  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/us_ticker.o
+    0x080096ac   0x00000014   Code   RO        25468    .text.us_ticker_irq_handler  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/hal/source/mbed_us_ticker_api.o
+    0x080096c0   0x0000000c   Code   RO        33838    .text.us_ticker_read  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/us_ticker.o
+    0x080096cc   0x0000001c   Code   RO        33840    .text.us_ticker_set_interrupt  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/us_ticker.o
+    0x080096e8   0x0000002a   Code   RO        26376    .text.write         BUILD/NUCLEO_F446RE/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x08009712   0x0000001a   Code   RO        34050    i.fputc             c:\Users\Jamie\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(fputc.o)
+    0x0800972c   0x0000001a   Code   RO        34887    x$fpl$fpinit        c:\Users\Jamie\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\fz_wm.l(fpinit.o)
+    0x08009746   0x00000002   PAD
+    0x08009748   0x000000a8   Data   RO          245    .rodata             BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_lib.o
+    0x080097f0   0x00000010   Data   RO          708    .rodata..L__const.mbed_rtos_init_singleton_mutex.singleton_mutex_attr  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/device/rtos/source/mbed_rtos_rtx.o
+    0x08009800   0x00000010   Data   RO        33203    .rodata.AHBPrescTable  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/STM32Cube_FW/system_stm32f4xx.o
+    0x08009810   0x00000008   Data   RO        33204    .rodata.APBPrescTable  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/STM32Cube_FW/system_stm32f4xx.o
+    0x08009818   0x0000003c   Data   RO        33221    .rodata.PinMap_CAN_RD  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F446xE/TARGET_NUCLEO_F446RE/PeripheralPins.o
+    0x08009854   0x0000003c   Data   RO        33222    .rodata.PinMap_CAN_TD  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F446xE/TARGET_NUCLEO_F446RE/PeripheralPins.o
+    0x08009890   0x00000048   Data   RO        33211    .rodata.PinMap_I2C_SCL  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F446xE/TARGET_NUCLEO_F446RE/PeripheralPins.o
+    0x080098d8   0x00000060   Data   RO        33210    .rodata.PinMap_I2C_SDA  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F446xE/TARGET_NUCLEO_F446RE/PeripheralPins.o
+    0x08009938   0x00000078   Data   RO        33214    .rodata.PinMap_UART_RX  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F446xE/TARGET_NUCLEO_F446RE/PeripheralPins.o
+    0x080099b0   0x00000078   Data   RO        33213    .rodata.PinMap_UART_TX  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F446xE/TARGET_NUCLEO_F446RE/PeripheralPins.o
+    0x08009a28   0x00000001   Data   RO        34274    .rodata._ZSt7nothrow  c:\Users\Jamie\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\libcxx\libcpp_w.l(new.cpp.o)
+    0x08009a29   0x00000003   PAD
+    0x08009a2c   0x00000018   Data   RO        23089    .rodata._ZTVN4mbed10SerialBaseE  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/drivers/source/SerialBase.o
+    0x08009a44   0x00000098   Data   RO        22437    .rodata._ZTVN4mbed14BufferedSerialE  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/drivers/source/BufferedSerial.o
+    0x08009adc   0x00000018   Data   RO        22623    .rodata._ZTVN4mbed3CANE  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/drivers/source/CAN.o
+    0x08009af4   0x00000018   Data   RO        22721    .rodata._ZTVN4mbed3I2CE  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/drivers/source/I2C.o
+    0x08009b0c   0x00000010   Data   RO        26977    .rodata._ZTVN4rtos6ThreadE  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/rtos/source/Thread.o
+    0x08009b1c   0x00000018   Data   RO        26521    .rodata._ZZL15default_consolevE14console_pinmap  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x08009b34   0x00000008   Data   RO        26510    .rodata.__stderr_name  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x08009b3c   0x00000007   Data   RO        26508    .rodata.__stdin_name  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x08009b43   0x00000008   Data   RO        26509    .rodata.__stdout_name  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x08009b4b   0x00000001   PAD
+    0x08009b4c   0x00000010   Data   RO        33588    .rodata.cst16       BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/i2c_api.o
+    0x08009b5c   0x00000040   Data   RO        33625    .rodata.ll_pin_defines  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/pinmap.o
+    0x08009b9c   0x00000004   Data   RO          247    .rodata.osRtxUserSVC  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_lib.o
+    0x08009ba0   0x00000024   Data   RO          242    .rodata.os_idle_thread_attr  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_lib.o
+    0x08009bc4   0x00000018   Data   RO          244    .rodata.os_timer_mq_attr  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_lib.o
+    0x08009bdc   0x00000024   Data   RO          243    .rodata.os_timer_thread_attr  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_lib.o
+    0x08009c00   0x00000042   Data   RO           21    .rodata.str1.1      BUILD/NUCLEO_F446RE/ARMC6/main.o
+    0x08009c42   0x00000013   Data   RO          248    .rodata.str1.1      BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_lib.o
+    0x08009c55   0x00000010   Data   RO          706    .rodata.str1.1      BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/device/rtos/source/mbed_rtos_rtx.o
+    0x08009c65   0x000000c8   Data   RO        26038    .rodata.str1.1      BUILD/NUCLEO_F446RE/ARMC6/mbed-os/platform/source/TARGET_CORTEX_M/mbed_fault_handler.o
+    0x08009d2d   0x00000003   PAD
+    0x08009d30   0x0000000b   Data   RO          235    .rodata.str1.4      BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_kernel.o
+    0x08009d3b   0x00000001   PAD
+    0x08009d3c   0x000000b8   Data   RO        33420    .rodata.timing_pts  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/can_api.o
+    0x08009df4   0x00000008   Data   RO        25472    .rodata.us_data     BUILD/NUCLEO_F446RE/ARMC6/mbed-os/hal/source/mbed_us_ticker_api.o
+    0x08009dfc   0x00000024   Data   RO        25474    .rodata.us_interface  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/hal/source/mbed_us_ticker_api.o
+    0x08009e20   0x00000008   Data   RO        33854    .rodata.us_ticker_get_info.info  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/us_ticker.o
+    0x08009e28   0x00000020   Data   RO        35075    Region$$Table       anon$$obj.o
+    0x08009e48   0x00000004   Data   RO           22    .init_array         BUILD/NUCLEO_F446RE/ARMC6/main.o
+    0x08009e4c   0x00000000   Data   RO        34156    .init_array         c:\Users\Jamie\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(init_aeabi.o)
+
+
+    Execution Region RW_IRAM1 (Base: 0x200001c8, Size: 0x00002734, Max: 0xffffffff, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x200001c8   0x00000004   Data   RW        34074    .data               c:\Users\Jamie\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(stdio_streams.o)
+    0x200001cc   0x00000004   Data   RW        34075    .data               c:\Users\Jamie\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(stdio_streams.o)
+    0x200001d0   0x00000004   Data   RW        34076    .data               c:\Users\Jamie\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(stdio_streams.o)
+    0x200001d4   0x00000004   Data   RW        34377    .data               c:\Users\Jamie\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(streamlock.o)
+    0x200001d8   0x00000008   Data   RW        28773    .data..L_MergedGlobals  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/STM32Cube_FW/STM32F4xx_HAL_Driver/stm32f4xx_hal.o
+    0x200001e0   0x00000004   Data   RW        33202    .data.SystemCoreClock  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/STM32Cube_FW/system_stm32f4xx.o
+    0x200001e4   0x00000040   Data   RW        26520    .data._ZL11filehandles  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x20000224   0x00000004   Data   RW          731    .data._ZL14idle_hook_fptr  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/device/rtos/source/mbed_rtx_idle.o
+    0x20000228   0x00000004   Data   RW        25473    .data.irq_handler   BUILD/NUCLEO_F446RE/ARMC6/mbed-os/hal/source/mbed_us_ticker_api.o
+    0x2000022c   0x000000a4   Data   RW          236    .data.os            BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_kernel.o
+    0x200002d0   0x00000054   Zero   RW        34071    .bss                c:\Users\Jamie\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(stdio_streams.o)
+    0x20000324   0x00000054   Zero   RW        34072    .bss                c:\Users\Jamie\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(stdio_streams.o)
+    0x20000378   0x00000054   Zero   RW        34073    .bss                c:\Users\Jamie\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(stdio_streams.o)
+    0x200003cc   0x00000060   Zero   RW        34301    .bss                c:\Users\Jamie\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libspace.o)
+    0x2000042c   0x00000064   Zero   RW           24    .bss..L_MergedGlobals  BUILD/NUCLEO_F446RE/ARMC6/main.o
+    0x20000490   0x00000002   Zero   RW        25304    .bss..L_MergedGlobals  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/hal/source/mbed_critical_section_api.o
+    0x20000492   0x00000002   PAD
+    0x20000494   0x00000024   Zero   RW        25651    .bss..L_MergedGlobals  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/platform/source/CThunkBase.o
+    0x200004b8   0x00000030   Zero   RW        25715    .bss..L_MergedGlobals  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/platform/source/FileBase.o
+    0x200004e8   0x00000070   Zero   RW        26222    .bss..L_MergedGlobals  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/platform/source/mbed_error.o
+    0x20000558   0x00000020   Zero   RW        26524    .bss..L_MergedGlobals  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x20000578   0x0000001c   Zero   RW        33336    .bss..L_MergedGlobals  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/serial_device.o
+    0x20000594   0x0000000c   Zero   RW        33421    .bss..L_MergedGlobals  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/can_api.o
+    0x200005a0   0x0000000c   Zero   RW        33476    .bss..L_MergedGlobals  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/hal_tick_overrides.o
+    0x200005ac   0x00000050   Zero   RW        33741    .bss..L_MergedGlobals  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/serial_api.o
+    0x200005fc   0x00000054   Zero   RW        33855    .bss..L_MergedGlobals  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/us_ticker.o
+    0x20000650   0x00000004   Zero   RW        26523    .bss._ZGVZL15default_consolevE7console  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x20000654   0x00000028   Zero   RW        26513    .bss._ZL16filehandle_mutex  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x2000067c   0x0000033c   Zero   RW        26522    .bss._ZZL15default_consolevE7console  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x200009b8   0x00001000   Zero   RW          703    .bss._main_stack    BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/device/rtos/source/mbed_rtos_rtx.o
+    0x200019b8   0x00000024   Zero   RW          704    .bss._main_thread_attr  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/device/rtos/source/mbed_rtos_rtx.o
+    0x200019dc   0x00000020   Zero   RW          676    .bss._static_mutexes  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/device/rtos/TOOLCHAIN_ARM_STD/mbed_boot_arm_std.o
+    0x200019fc   0x000000e0   Zero   RW          677    .bss._static_mutexes_mem  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/device/rtos/TOOLCHAIN_ARM_STD/mbed_boot_arm_std.o
+    0x20001adc   0x00000108   Zero   RW           18    .bss.can1           BUILD/NUCLEO_F446RE/ARMC6/main.o
+    0x20001be4   0x00000004   Zero   RW        26177    .bss.critical_section_reentrancy_counter  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/platform/source/mbed_critical.o
+    0x20001be8   0x00000002   Zero   RW        26325    .bss.deep_sleep_lock  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/platform/source/mbed_power_mgmt.o
+    0x20001bea   0x00000006   PAD
+    0x20001bf0   0x00000038   Zero   RW        25475    .bss.events         BUILD/NUCLEO_F446RE/ARMC6/mbed-os/hal/source/mbed_us_ticker_api.o
+    0x20001c28   0x00000001   Zero   RW        26221    .bss.halt_in_progress  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/platform/source/mbed_error.o
+    0x20001c29   0x00000003   PAD
+    0x20001c2c   0x00000108   Zero   RW           19    .bss.i2c            BUILD/NUCLEO_F446RE/ARMC6/main.o
+    0x20001d34   0x00000014   Zero   RW        33587    .bss.i2c_handles    BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/i2c_api.o
+    0x20001d48   0x00000001   Zero   RW        26220    .bss.mbed_error_in_progress  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/platform/source/mbed_error.o
+    0x20001d49   0x00000003   PAD
+    0x20001d4c   0x00000054   Zero   RW        26039    .bss.mbed_fault_context  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/platform/source/TARGET_CORTEX_M/mbed_fault_handler.o
+    0x20001da0   0x00000004   Zero   RW        26512    .bss.mbed_heap_size  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x20001da4   0x00000004   Zero   RW        26511    .bss.mbed_heap_start  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x20001da8   0x00000004   Zero   RW        33615    .bss.mbed_sdk_inited  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/mbed_overrides.o
+    0x20001dac   0x00000004   Zero   RW          694    .bss.mbed_stack_isr_size  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/device/rtos/source/mbed_boot.o
+    0x20001db0   0x00000004   Zero   RW          693    .bss.mbed_stack_isr_start  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/device/rtos/source/mbed_boot.o
+    0x20001db4   0x000000bc   Zero   RW           17    .bss.ms100          BUILD/NUCLEO_F446RE/ARMC6/main.o
+    0x20001e70   0x00000040   Zero   RW          241    .bss.os             BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_lib.o
+    0x20001eb0   0x00000001   Zero   RW          654    .bss.os             BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/Source/os_systick.o
+    0x20001eb1   0x00000003   PAD
+    0x20001eb4   0x000001f0   Zero   RW          675    .bss.os.libspace    BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/device/rtos/TOOLCHAIN_ARM_STD/mbed_boot_arm_std.o
+    0x200020a4   0x00000034   Zero   RW          252    .bss.os.msgqueue.cb  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_lib.o
+    0x200020d8   0x00000050   Zero   RW          253    .bss.os.msgqueue.mem  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_lib.o
+    0x20002128   0x00000088   Zero   RW          249    .bss.os.thread.cb   BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_lib.o
+    0x200021b0   0x00000044   Zero   RW          705    .bss.os.thread.cb   BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/device/rtos/source/mbed_rtos_rtx.o
+    0x200021f4   0x00000004   PAD
+    0x200021f8   0x00000200   Zero   RW          250    .bss.os.thread.idle.stack  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_lib.o
+    0x200023f8   0x00000300   Zero   RW          251    .bss.os.thread.timer.stack  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_lib.o
+    0x200026f8   0x00000001   Zero   RW          678    .bss.os_kernel_is_active.os_kernel_active  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/device/rtos/TOOLCHAIN_ARM_STD/mbed_boot_arm_std.o
+    0x200026f9   0x00000003   PAD
+    0x200026fc   0x00000044   Zero   RW           20    .bss.rtc            BUILD/NUCLEO_F446RE/ARMC6/main.o
+    0x20002740   0x00000004   Zero   RW          709    .bss.singleton_mutex_id  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/device/rtos/source/mbed_rtos_rtx.o
+    0x20002744   0x0000001c   Zero   RW          707    .bss.singleton_mutex_obj  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/device/rtos/source/mbed_rtos_rtx.o
+    0x20002760   0x00000004   Zero   RW          722    .bss.terminate_hook  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/cmsis/device/rtos/source/mbed_rtx_handlers.o
+    0x20002764   0x00000198   Zero   RW        33335    .bss.uart_handlers  BUILD/NUCLEO_F446RE/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32F4/serial_device.o
+
+
+    Execution Region ARM_LIB_HEAP (Base: 0x20002900, Size: 0x0001d300, Max: 0x0001d300, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x20002900   0x0001d300   Zero   RW            1    ARM_LIB_HEAP.bss    anon$$obj.o
+
+
+    Execution Region ARM_LIB_STACK (Base: 0x2001fc00, Size: 0x00000400, Max: 0x00000400, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x2001fc00   0x00000400   Zero   RW            2    ARM_LIB_STACK.bss   anon$$obj.o
+
+
+==============================================================================
+
+Image component sizes
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
+
+     33986       2446       2244        248     130000      41012   Object Totals
+         0          0         32          0     120576          0   (incl. Generated)
+        80          0          5          0         24          0   (incl. Padding)
+      4290        202          4         16        348       4188   Library Totals
+        22          0          3          0          0          0   (incl. Padding)
+
+==============================================================================
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
+
+     38276       2648       2248        264     130348      41236   Grand Totals
+     38276       2648       2248        264     130348      41236   ELF Image Totals
+     38276       2648       2248        264          0          0   ROM Totals
+
+==============================================================================
+
+    Total RO  Size (Code + RO Data)                40524 (  39.57kB)
+    Total RW  Size (RW Data + ZI Data)            130612 ( 127.55kB)
+    Total ROM Size (Code + RO Data + RW Data)      40788 (  39.83kB)
+
+==============================================================================
+
