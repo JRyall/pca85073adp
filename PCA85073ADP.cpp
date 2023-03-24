@@ -84,7 +84,7 @@ void PCA85073ADP::enableAlarm()
 }
 
 //set the alarm
-void PCA85073ADP::setAlarm(uint8_t alarm_hour, uint8_t alarm_minute, uint8_t alarm_second, uint8_t alarm_day, uint8_t alarm_weekday)
+void PCA85073ADP::setAlarm(uint8_t alarm_hour, uint8_t alarm_minute, uint8_t alarm_second, uint8_t alarm_day, uint8_t alarm_weekday, bool interrupt)
 {
 
     char data[6];
@@ -97,8 +97,10 @@ void PCA85073ADP::setAlarm(uint8_t alarm_hour, uint8_t alarm_minute, uint8_t ala
     data[5] = decToBcd(alarm_weekday);
 
     _i2c.write(I2C_ADDR, data, 6);              //write alarm bytes
-
-    enableAlarm();                              //call the enable alarm function to enable the INT pin to be set low if alarm is activated
+    if (interrupt == 1)
+    {
+        enableAlarm();                          //call the enable alarm function to enable the INT pin to be set low if alarm is activated
+    }              
 }
 
 //check if the alarm has been activated
@@ -118,6 +120,11 @@ bool PCA85073ADP::checkAlarmFlag()
     {
         return true;
     }
+    if(flag == 1)                               //set to 1 as reading byte 6 and 7 (byte 7 set to 0 when inturrupt pin is enabled)
+    {
+        return true;
+    }
+
     return false;
 }
 

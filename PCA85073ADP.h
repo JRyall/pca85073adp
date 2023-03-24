@@ -34,7 +34,7 @@ public:
 	void setDate(uint8_t weekday, uint8_t day, uint8_t month, uint8_t yr); //DONE
 	char readTime(int n); 
 	void enableAlarm();	// called on setAlarm()
-	void setAlarm(uint8_t alarm_second, uint8_t alarm_minute, uint8_t alarm_hour, uint8_t alarm_day, uint8_t alarm_weekday);
+	void setAlarm(uint8_t alarm_second, uint8_t alarm_minute, uint8_t alarm_hour, uint8_t alarm_day, uint8_t alarm_weekday, bool interrupt);
 	char readAlarm(int n);
 	bool checkAlarmFlag();
 	void resetAlarm();
