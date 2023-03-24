@@ -13,7 +13,7 @@ PCA85073ADP rtc(i2c)                                      initialize RTC object
 
 setTime(Hour, Minute, Second)                             Set the time 
 setDate(Weekday, Day, Month, Year)                        Set the date
-setAlarm(Hour, Minute, Second, Day, Weekday, Inturrupt)   Set the alarm
+setAlarm(Hour, Minute, Second, Day, Weekday, interrupt)   Set the alarm
 checkAlarmFlag()                                          Check the alarm flag
 resetAlarm()                                              clears the flags for the inturrupt and the alarm triggered flag
 
@@ -31,7 +31,7 @@ getAlarmSecond()
 getAlarmWeekday()
 getAlarmDay()
 
-When setting the alarm, the inturrupt bool will dictate if the inturrupt pin should follow the alarm flag in the register. 
+When setting the alarm, the interrupt bool will dictate if the interrupt pin should follow the alarm flag in the register. 
 If set the pin will be pulled low when the alarm is activated. 
 
 Added is an example of the code for mbed 6 on a STM32F446RE IC.
