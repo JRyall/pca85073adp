@@ -23,7 +23,7 @@ int main()
     rtc.resetAlarm(); //clears the flags for the inturrupt and the alarm triggered flag
     rtc.setTime(13, 02, 55); //Set the time (Hours, Mins, Secs)
     rtc.setDate(1, 21, 06, 23); //Set the date (weekday, day, month, year(0-99))
-    rtc.setAlarm(13, 03, 0, 21, 1, 1); //Set the alarm (hour, minute, second, day, weekday)
+    rtc.setAlarm(13, 03, 0, 21, 1, 1); //Set the alarm (hour, minute, second, day, weekday, interrupt)
     ////////////////////////////////////////////////RTC OVER I2C/////////////////////////////////////////
 
     //run the tasks defined in the delayed threads
