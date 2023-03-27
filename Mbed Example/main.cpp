@@ -30,29 +30,31 @@ int main()
     while (true) {
         led();
         printf("Time: ");
-        printf("%d:%d:%d ", rtc.getHour(), rtc.getMinute(), rtc.getSecond());
+        int* readTime = rtc.readTime();
+        printf("%d:%d:%d ", readTime[2], readTime[1], readTime[0]);
         printf("Date: ");
-        if(rtc.getWeekday() == 0){ printf("Sunday ");}
-        if(rtc.getWeekday() == 1){ printf("Monday ");}
-        if(rtc.getWeekday() == 2){ printf("Tuesday ");}
-        if(rtc.getWeekday() == 3){ printf("Wednesday ");}
-        if(rtc.getWeekday() == 4){ printf("Thursday ");}
-        if(rtc.getWeekday() == 5){ printf("Friday ");}
-        if(rtc.getWeekday() == 6){ printf("Saturday ");}
-        printf("the %d:%d:%d ", rtc.getDay(), rtc.getMonth(), rtc.getYear());
+        if(readTime[4] == 0){ printf("Sunday ");}
+        if(readTime[4] == 1){ printf("Monday ");}
+        if(readTime[4] == 2){ printf("Tuesday ");}
+        if(readTime[4] == 3){ printf("Wednesday ");}
+        if(readTime[4] == 4){ printf("Thursday ");}
+        if(readTime[4] == 5){ printf("Friday ");}
+        if(readTime[4] == 6){ printf("Saturday ");}
+        printf("the %d:%d:%d ", readTime[3], readTime[5], readTime[6]);
         printf("\r\n");
         printf("\r\n");
-        printf("Alarm Time: %d:%d:%d", rtc.getAlarmHour(), rtc.getAlarmMinute(), rtc.getAlarmSecond());
+        int* readAlarm = rtc.readAlarm();
+        printf("Alarm Time: %d:%d:%d", readAlarm[2], readAlarm[1], readAlarm[0]);
         printf("\r\n");
         printf("Alarm Date: ");
-        if(rtc.getAlarmWeekday() == 0){ printf("Sunday ");}
-        if(rtc.getAlarmWeekday() == 1){ printf("Monday ");}
-        if(rtc.getAlarmWeekday() == 2){ printf("Tuesday ");}
-        if(rtc.getAlarmWeekday() == 3){ printf("Wednesday ");}
-        if(rtc.getAlarmWeekday() == 4){ printf("Thursday ");}
-        if(rtc.getAlarmWeekday() == 5){ printf("Friday ");}
-        if(rtc.getAlarmWeekday() == 6){ printf("Saturday ");}
-        printf("the %d", rtc.getAlarmDay());
+        if(readAlarm[4] == 0){ printf("Sunday ");}
+        if(readAlarm[4] == 1){ printf("Monday ");}
+        if(readAlarm[4] == 2){ printf("Tuesday ");}
+        if(readAlarm[4] == 3){ printf("Wednesday ");}
+        if(readAlarm[4] == 4){ printf("Thursday ");}
+        if(readAlarm[4] == 5){ printf("Friday ");}
+        if(readAlarm[4] == 6){ printf("Saturday ");}
+        printf("the %d", readAlarm[3]);
         printf("\r\n");
         printf("Alarm Flag: ");
         printf("%d", rtc.checkAlarmFlag());

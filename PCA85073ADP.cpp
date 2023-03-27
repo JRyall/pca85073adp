@@ -44,7 +44,7 @@ void PCA85073ADP::setDate(uint8_t weekday, uint8_t day, uint8_t month, uint8_t y
 }
 
 //read the time
-char PCA85073ADP::readTime(int n)
+int* PCA85073ADP::readTime()
 {
     char addr[1];
     addr[0] = RTC_SECOND_ADDR;                  //select the second register
@@ -53,7 +53,7 @@ char PCA85073ADP::readTime(int n)
     char data[7];
     _i2c.read(I2C_ADDR, data, 7);               //read the output data
 
-    char readTimeOutput[7];
+    static int readTimeOutput[7];
     readTimeOutput[0] = bcdToDec(data[0]); //sec
     readTimeOutput[1] = bcdToDec(data[1]); //min
     readTimeOutput[2] = bcdToDec(data[2]); //hour
@@ -61,7 +61,7 @@ char PCA85073ADP::readTime(int n)
     readTimeOutput[4] = bcdToDec(data[4]); //weekday
     readTimeOutput[5] = bcdToDec(data[5]); //month
     readTimeOutput[6] = bcdToDec(data[6]); //year
-    return readTimeOutput[n];
+    return readTimeOutput;
 }
 
 // called on setAlarm()
@@ -128,8 +128,29 @@ bool PCA85073ADP::checkAlarmFlag()
     return false;
 }
 
+//check if the alarm has been activated
+bool PCA85073ADP::isAlarmSet()
+{
+
+    char addr[1];
+    addr[0] = RTC_CTRL_2;                       //select the control_2 register
+    _i2c.write(I2C_ADDR, addr, 1);
+
+    char data[1];
+    _i2c.read(I2C_ADDR, data, 1);               
+
+    int flag;
+    flag = data[0]  >> 7;                       //read the control_2 byte and check if bit 6 is 1
+    if(flag == 1)                               //set to 1 as reading byte 6 and 7 (byte 7 set to 0 when inturrupt pin is enabled)
+    {
+        return true;
+    }
+
+    return false;
+}
+
 //read the alarm time data
-char PCA85073ADP::readAlarm(int n)
+int* PCA85073ADP::readAlarm()
 {
 
     char addr[1];
@@ -139,15 +160,14 @@ char PCA85073ADP::readAlarm(int n)
     char data[7];
     _i2c.read(I2C_ADDR, data, 5);               //read the data from the 5 bytes containing the info
 
-    char output[5];
+    static int output[5];
     output[0] = 10*(data[0]/16) + data[0] % 16; //sec
     output[1] = 10*(data[1]/16) + data[1] % 16; //min
     output[2] = 10*(data[2]/16) + data[2] % 16; //hour
     output[3] = 10*(data[3]/16) + data[3] % 16; //day
     output[4] = 10*(data[4]/16) + data[4] % 16; //weekday
 
-
-    return output[n];
+    return output;
 
 }
 
